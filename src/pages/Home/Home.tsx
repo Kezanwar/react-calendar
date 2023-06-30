@@ -5,7 +5,7 @@ import { Logo } from '@app/components/elements/Logo';
 
 import { useResponsive } from '@app/hooks/useResponsive';
 
-import { cndClass } from '@app/util/styles/styles.utilities';
+import { cndClass } from '@app/util/styles/styles.util';
 
 const Home: React.FC = () => {
   const [isMobile, isTablet] = useResponsive();
