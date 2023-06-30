@@ -1,8 +1,8 @@
-# DIGITAL SPANIEL REACT TYPESCRIPT
+# REACT CALENDAR
 
-# quick generate a component using grc.sh - usage is explained in script comments
+### quick generate a component using grc.sh - usage is explained in script comments
 
-# uses json server & storybook
+### uses json server & storybook
 
 ```
 yarn dev
