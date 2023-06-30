@@ -1,10 +1,11 @@
 import React from 'react';
-
 import { motion } from 'framer-motion';
 
-import { useResponsive } from '@app/hooks/useResponsive';
 import { Logo } from '@app/components/elements/Logo';
-import { cndClass } from '@app/utilities/styles/styles.utilities';
+
+import { useResponsive } from '@app/hooks/useResponsive';
+
+import { cndClass } from '@app/util/styles/styles.utilities';
 
 const Home: React.FC = () => {
   const [isMobile, isTablet] = useResponsive();

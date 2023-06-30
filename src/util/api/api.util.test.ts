@@ -1,4 +1,4 @@
-import { FetchErrorHandlerOptions, fetchErrorHandler } from './api.utilities';
+import { FetchErrorHandlerOptions, fetchErrorHandler } from './api.util';
 
 describe('fetchErrorHandler', () => {
   it('should handle a string error', () => {
