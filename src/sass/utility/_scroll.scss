@@ -1,0 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* width */
+html::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+html::-webkit-scrollbar-track {
+  background: rgba($navy--light, 0.1);
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+  background-color: $pink--dark;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+  background: $pink--medium;
+}

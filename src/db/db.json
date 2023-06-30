@@ -1,0 +1,72 @@
+{
+  "testimonials": [
+    {
+      "id": "2176837952",
+      "author": "Paul Simons",
+      "position": "Founder, MegaCorp",
+      "content": "Working with Digital Spaniel has been a breath of fresh air. Their approach and attitude kept me informed and included from the start. Super pleased with the end results too!",
+      "imgSrc": "http://localhost:5173/src/assets/images/paul-testimonial.png"
+    },
+    {
+      "id": "2776887652",
+      "author": "Johnny B Goode",
+      "position": "CEO, Getting Things Done",
+      "content": "Advice and support from DigiSpan was second to none. Always willing to help and offer advice and solutions. A very good and rapid understanding of our requirements was key to this.",
+      "imgSrc": "http://localhost:5173/src/assets/images/johnny-testimonial.png"
+    },
+    {
+      "id": "2359087653",
+      "author": "Mary Jane",
+      "position": "CEO, Design Matters",
+      "content": "We needed a creative and unique brand which could compete against established products. Digital Spaniel delivered in spades and we’ve seen a huge response to the product launch.",
+      "imgSrc": "http://localhost:5173/src/assets/images/mary-testimonial.png"
+    }
+  ],
+  "recent-projects": [
+    {
+      "id": "1329087643",
+      "title": "Wellies",
+      "categories": ["branding", "web_design"],
+      "cover_image": "http://localhost:5173/src/assets/images/wellies.png",
+      "caption": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nesciunt quibusdam aliquam?",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dignissimos natus facilis vel pariatur sed laboriosam, cumque dicta. Voluptates delectus, fugiat in accusamus assumenda, dolore unde necessitatibus praesentium, at sequi laudantium. Adipisci aliquid, facere atque cum natus voluptatibus magnam quisquam blanditiis cumque voluptatum iure illo? Consequuntur quos porro earum nemo vel sequi magni pariatur nobis debitis, suscipit animi a deserunt corporis possimus ipsum alias? Voluptatibus, asperiores cupiditate excepturi ducimus dolorum modi sequi dicta accusamus officiis, atque, perspiciatis praesentium! Voluptates aliquid cupiditate iste, deleniti debitis obcaecati similique soluta aut fuga voluptatibus facilis, sit ab quis dicta nobis et ipsa voluptatem nam! Eum magnam cupiditate quod placeat qui vitae pariatur! Excepturi eius error maiores accusantium ab corrupti tempora blanditiis nostrum. Illo dolorum quod esse corrupti omnis mollitia.",
+      "date": "2nd Mar 2023"
+    },
+    {
+      "id": "6319587743",
+      "title": "Make Ideas Happen",
+      "categories": ["branding", "digital_marketing"],
+      "cover_image": "http://localhost:5173/src/assets/images/newspaper02.png",
+      "caption": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nesciunt quibusdam aliquam?",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dignissimos natus facilis vel pariatur sed laboriosam, cumque dicta. Voluptates delectus, fugiat in accusamus assumenda, dolore unde necessitatibus praesentium, at sequi laudantium. Adipisci aliquid, facere atque cum natus voluptatibus magnam quisquam blanditiis cumque voluptatum iure illo? Consequuntur quos porro earum nemo vel sequi magni pariatur nobis debitis, suscipit animi a deserunt corporis possimus ipsum alias? Voluptatibus, asperiores cupiditate excepturi ducimus dolorum modi sequi dicta accusamus officiis, atque, perspiciatis praesentium! Voluptates aliquid cupiditate iste, deleniti debitis obcaecati similique soluta aut fuga voluptatibus facilis, sit ab quis dicta nobis et ipsa voluptatem nam! Eum magnam cupiditate quod placeat qui vitae pariatur! Excepturi eius error maiores accusantium ab corrupti tempora blanditiis nostrum. Illo dolorum quod esse corrupti omnis mollitia.",
+      "date": "18th Feb 2023"
+    },
+    {
+      "id": "1388347393",
+      "title": "Tesco",
+      "categories": ["digital_marketing", "web_design"],
+      "cover_image": "http://localhost:5173/src/assets/images/mackerel.png",
+      "caption": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nesciunt quibusdam aliquam?",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dignissimos natus facilis vel pariatur sed laboriosam, cumque dicta. Voluptates delectus, fugiat in accusamus assumenda, dolore unde necessitatibus praesentium, at sequi laudantium. Adipisci aliquid, facere atque cum natus voluptatibus magnam quisquam blanditiis cumque voluptatum iure illo? Consequuntur quos porro earum nemo vel sequi magni pariatur nobis debitis, suscipit animi a deserunt corporis possimus ipsum alias? Voluptatibus, asperiores cupiditate excepturi ducimus dolorum modi sequi dicta accusamus officiis, atque, perspiciatis praesentium! Voluptates aliquid cupiditate iste, deleniti debitis obcaecati similique soluta aut fuga voluptatibus facilis, sit ab quis dicta nobis et ipsa voluptatem nam! Eum magnam cupiditate quod placeat qui vitae pariatur! Excepturi eius error maiores accusantium ab corrupti tempora blanditiis nostrum. Illo dolorum quod esse corrupti omnis mollitia.",
+      "date": "27th Jan 2023"
+    },
+    {
+      "id": "5188713393",
+      "title": "Dinamo",
+      "categories": ["branding", "web_design"],
+      "cover_image": "http://localhost:5173/src/assets/images/newspaper.png",
+      "caption": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nesciunt quibusdam aliquam?",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dignissimos natus facilis vel pariatur sed laboriosam, cumque dicta. Voluptates delectus, fugiat in accusamus assumenda, dolore unde necessitatibus praesentium, at sequi laudantium. Adipisci aliquid, facere atque cum natus voluptatibus magnam quisquam blanditiis cumque voluptatum iure illo? Consequuntur quos porro earum nemo vel sequi magni pariatur nobis debitis, suscipit animi a deserunt corporis possimus ipsum alias? Voluptatibus, asperiores cupiditate excepturi ducimus dolorum modi sequi dicta accusamus officiis, atque, perspiciatis praesentium! Voluptates aliquid cupiditate iste, deleniti debitis obcaecati similique soluta aut fuga voluptatibus facilis, sit ab quis dicta nobis et ipsa voluptatem nam! Eum magnam cupiditate quod placeat qui vitae pariatur! Excepturi eius error maiores accusantium ab corrupti tempora blanditiis nostrum. Illo dolorum quod esse corrupti omnis mollitia.",
+      "date": "3rd Jan 2023"
+    },
+    {
+      "id": "7758446393",
+      "title": "Biker",
+      "categories": ["web_design", "digital_marketing"],
+      "cover_image": "http://localhost:5173/src/assets/images/rider.png",
+      "caption": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nesciunt quibusdam aliquam?",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dignissimos natus facilis vel pariatur sed laboriosam, cumque dicta. Voluptates delectus, fugiat in accusamus assumenda, dolore unde necessitatibus praesentium, at sequi laudantium. Adipisci aliquid, facere atque cum natus voluptatibus magnam quisquam blanditiis cumque voluptatum iure illo? Consequuntur quos porro earum nemo vel sequi magni pariatur nobis debitis, suscipit animi a deserunt corporis possimus ipsum alias? Voluptatibus, asperiores cupiditate excepturi ducimus dolorum modi sequi dicta accusamus officiis, atque, perspiciatis praesentium! Voluptates aliquid cupiditate iste, deleniti debitis obcaecati similique soluta aut fuga voluptatibus facilis, sit ab quis dicta nobis et ipsa voluptatem nam! Eum magnam cupiditate quod placeat qui vitae pariatur! Excepturi eius error maiores accusantium ab corrupti tempora blanditiis nostrum. Illo dolorum quod esse corrupti omnis mollitia.",
+      "date": "14th Dec 2022"
+    }
+  ]
+}
