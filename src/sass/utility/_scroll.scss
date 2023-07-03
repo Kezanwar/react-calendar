@@ -9,16 +9,16 @@ html::-webkit-scrollbar {
 
 /* Track */
 html::-webkit-scrollbar-track {
-  background: rgba($navy--light, 0.1);
+  background: rgba(grey, 0.1);
 }
 
 /* Handle */
 html::-webkit-scrollbar-thumb {
-  background-color: $pink--dark;
+  background-color: rgb(63, 63, 63);
   border-radius: 20px;
 }
 
-/* Handle on hover */
-html::-webkit-scrollbar-thumb:hover {
-  background: $pink--medium;
-}
+// /* Handle on hover */
+// html::-webkit-scrollbar-thumb:hover {
+//   background: black;
+// }
