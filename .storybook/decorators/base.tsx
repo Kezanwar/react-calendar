@@ -9,9 +9,6 @@ import { store } from '../../src/store/store';
 // react-router
 import { BrowserRouter } from 'react-router-dom';
 
-// styles
-import '@app/sass/styles.scss';
-
 const Base: Decorator = (Story) => {
   return (
     <BrowserRouter>

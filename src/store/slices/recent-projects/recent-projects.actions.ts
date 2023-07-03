@@ -10,7 +10,7 @@ import {
 import { getRecentProjects } from '../../../api/projects.api';
 
 // util
-import { fetchErrorHandler } from '@app/utilities/api/api.utilities';
+import { fetchErrorHandler } from '@app/util/api/api.util';
 
 export const fetchProjectsAction = async (dispatch: AppDispatch) => {
   try {

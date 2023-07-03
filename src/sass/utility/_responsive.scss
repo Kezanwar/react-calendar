@@ -48,11 +48,7 @@ $breakpoint-phone-sml: 400px;
 .is-container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
   max-width: 100%;
 
-  @media (min-width: 1400px) {
-    max-width: 1400px;
-  }
+  @apply px-6 2xl:px-0 2xl:max-w-[1530px];
 }
