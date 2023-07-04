@@ -43,8 +43,6 @@ const CalendarGrid: React.FC<Props> = React.memo(
       );
     }, [chosenMonth, events]);
 
-    console.log(selectedDay);
-
     return (
       <motion.div
         onAnimationComplete={handleUpdatePrevRef}
