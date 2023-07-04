@@ -11,8 +11,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchEventsAction } from '@app/store/slices/events/events.actions';
 
 // components
-import { CalendarGrid } from './components';
-import CalendarControls from './components/CalendarControls';
+import { CalendarGrid, CalendarControls, DayEvents } from './components';
 
 const Calendar: React.FC = () => {
   const [chosenMonth, setChosenMonth] = useState(new Date());

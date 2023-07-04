@@ -280,6 +280,330 @@
       "attendants": ["Ethan J.", "Sophia P.", "William H.", "Olivia L."]
     },
     {
+      "id": "b8d33a3d-95e0-4be4-9d08-503717f456d1",
+      "startTime": "2023-07-05T10:00:00.000000Z",
+      "endTime": "2023-07-05T11:30:00.000000Z",
+      "description": "Workshop",
+      "title": "Time Management",
+      "location": "Training Room A",
+      "attendants": ["Oliver M.", "Sophia C.", "William G.", "Emma J."]
+    },
+    {
+      "id": "a7ffddad-7a2b-46db-9d38-015a512fc69e",
+      "startTime": "2023-07-05T14:00:00.000000Z",
+      "endTime": "2023-07-05T15:30:00.000000Z",
+      "description": "Conference",
+      "title": "Artificial Intelligence",
+      "location": "Convention Center",
+      "attendants": ["Olivia B.", "Henry P.", "Ava K.", "Liam F."]
+    },
+    {
+      "id": "64d49eae-9e71-44a9-9e65-cc94a9f6b146",
+      "startTime": "2023-07-10T09:30:00.000000Z",
+      "endTime": "2023-07-10T11:00:00.000000Z",
+      "description": "Training Session",
+      "title": "Effective Communication",
+      "location": "Training Room B",
+      "attendants": ["Lucas N.", "Mia H.", "Henry C.", "Ava L."]
+    },
+    {
+      "id": "80bc50da-0e19-43b9-a60d-10eb1de32b7e",
+      "startTime": "2023-07-10T14:30:00.000000Z",
+      "endTime": "2023-07-10T16:00:00.000000Z",
+      "description": "Seminar",
+      "title": "Leadership Strategies",
+      "location": "Conference Center",
+      "attendants": ["Ethan R.", "Sophia M.", "William D.", "Olivia P."]
+    },
+    {
+      "id": "0b869b87-96f7-4a9e-b45a-7df4ad9b7726",
+      "startTime": "2023-07-15T10:00:00.000000Z",
+      "endTime": "2023-07-15T11:30:00.000000Z",
+      "description": "Project Meeting",
+      "title": "Status Update",
+      "location": "Office Conference Room",
+      "attendants": ["James A.", "Emily S.", "Daniel K."]
+    },
+    {
+      "id": "83f4c2ea-957a-4d87-8698-74a14beab2e7",
+      "startTime": "2023-07-15T14:00:00.000000Z",
+      "endTime": "2023-07-15T15:30:00.000000Z",
+      "description": "Product Training",
+      "title": "New Features Demo",
+      "location": "Training Room A",
+      "attendants": ["Sophie P.", "Noah H.", "Charlotte G.", "Jacob L."]
+    },
+    {
+      "id": "0c5f47d6-cbf5-4c44-84c9-6e81a34d2b96",
+      "startTime": "2023-07-15T14:00:00.000000Z",
+      "endTime": "2023-07-15T16:00:00.000000Z",
+      "description": "Conference",
+      "title": "Digital Marketing Strategies",
+      "location": "Convention Center",
+      "attendants": ["Oliver W.", "Sophia R.", "William K.", "Emma M."]
+    },
+    {
+      "id": "6e8e22c1-b4fe-4b13-8e89-67210ce2f124",
+      "startTime": "2023-07-20T09:30:00.000000Z",
+      "endTime": "2023-07-20T11:00:00.000000Z",
+      "description": "Workshop",
+      "title": "Presentation Skills",
+      "location": "Training Room B",
+      "attendants": ["Lucas G.", "Mia W.", "Henry N.", "Ava D."]
+    },
+    {
+      "id": "0e0d8c3e-6527-48a2-8580-779c8d1229a7",
+      "startTime": "2023-07-20T14:30:00.000000Z",
+      "endTime": "2023-07-20T16:00:00.000000Z",
+      "description": "Seminar",
+      "title": "Effective Teamwork",
+      "location": "Conference Center",
+      "attendants": ["Ethan B.", "Sophia J.", "William S.", "Olivia L."]
+    },
+    {
+      "id": "5ddc4f3e-1bfc-4f53-9781-4e3f4e6f0492",
+      "startTime": "2023-07-25T10:00:00.000000Z",
+      "endTime": "2023-07-25T11:30:00.000000Z",
+      "description": "Project Meeting",
+      "title": "Task Allocation",
+      "location": "Office Conference Room",
+      "attendants": ["James C.", "Emily M.", "Daniel P."]
+    },
+    {
+      "id": "4b8c8f35-9e23-4fbf-979d-02c95e3a9a6c",
+      "startTime": "2023-07-25T14:00:00.000000Z",
+      "endTime": "2023-07-25T15:30:00.000000Z",
+      "description": "Product Training",
+      "title": "Advanced Features Workshop",
+      "location": "Training Room A",
+      "attendants": ["Sophie H.", "Noah L.", "Charlotte D.", "Jacob M."]
+    },
+    {
+      "id": "b6e44b44-347c-4b8b-9384-c8b28e8f179d",
+      "startTime": "2023-10-05T09:30:00.000000Z",
+      "endTime": "2023-10-05T11:00:00.000000Z",
+      "description": "Conference",
+      "title": "Digital Transformation",
+      "location": "Convention Center",
+      "attendants": ["Oliver C.", "Sophia G.", "William J.", "Emma N."]
+    },
+    {
+      "id": "3e2ed222-1b6b-4f3a-b196-4d85c0909f5b",
+      "startTime": "2023-10-05T14:30:00.000000Z",
+      "endTime": "2023-10-05T16:00:00.000000Z",
+      "description": "Seminar",
+      "title": "Innovation Strategies",
+      "location": "Conference Center",
+      "attendants": ["Ethan L.", "Sophia P.", "William H.", "Olivia G."]
+    },
+    {
+      "id": "7fd23d06-6ae5-4b8c-b621-c036e3ef9c39",
+      "startTime": "2023-10-10T10:00:00.000000Z",
+      "endTime": "2023-10-10T11:30:00.000000Z",
+      "description": "Workshop",
+      "title": "Effective Leadership",
+      "location": "Training Room B",
+      "attendants": ["Lucas D.", "Mia M.", "Henry P.", "Ava S."]
+    },
+    {
+      "id": "ab3a1666-eb9d-4135-97d5-2d4d5a24bfb7",
+      "startTime": "2023-10-10T14:00:00.000000Z",
+      "endTime": "2023-10-10T15:30:00.000000Z",
+      "description": "Conference",
+      "title": "Data Analytics",
+      "location": "Convention Center",
+      "attendants": ["Oliver K.", "Sophia W.", "William N.", "Emma L."]
+    },
+    {
+      "id": "e14445e7-1054-4210-82d1-06b77c6b60d5",
+      "startTime": "2023-10-15T09:30:00.000000Z",
+      "endTime": "2023-10-15T11:00:00.000000Z",
+      "description": "Training Session",
+      "title": "Effective Communication",
+      "location": "Training Room A",
+      "attendants": ["Lucas G.", "Mia H.", "Henry C.", "Ava L."]
+    },
+    {
+      "id": "5ea0c7b2-3db4-4e72-925e-3b734b876e5f",
+      "startTime": "2023-10-15T14:30:00.000000Z",
+      "endTime": "2023-10-15T16:00:00.000000Z",
+      "description": "Seminar",
+      "title": "Leadership Strategies",
+      "location": "Conference Center",
+      "attendants": ["Ethan R.", "Sophia M.", "William D.", "Olivia P."]
+    },
+    {
+      "id": "e6e29759-7b60-49d3-bb67-0414b7e7a128",
+      "startTime": "2023-11-05T10:00:00.000000Z",
+      "endTime": "2023-11-05T11:30:00.000000Z",
+      "description": "Workshop",
+      "title": "Time Management",
+      "location": "Training Room B",
+      "attendants": ["Oliver M.", "Sophia C.", "William G.", "Emma J."]
+    },
+    {
+      "id": "35de1395-920b-48c4-93c0-ef7b63efdd30",
+      "startTime": "2023-11-05T14:00:00.000000Z",
+      "endTime": "2023-11-05T15:30:00.000000Z",
+      "description": "Conference",
+      "title": "Artificial Intelligence",
+      "location": "Convention Center",
+      "attendants": ["Olivia B.", "Henry P.", "Ava K.", "Liam F."]
+    },
+    {
+      "id": "e2fb3c1c-6e49-4b54-a2a9-759d87960172",
+      "startTime": "2023-11-10T09:30:00.000000Z",
+      "endTime": "2023-11-10T11:00:00.000000Z",
+      "description": "Training Session",
+      "title": "Effective Communication",
+      "location": "Training Room A",
+      "attendants": ["Lucas N.", "Mia H.", "Henry C.", "Ava L."]
+    },
+    {
+      "id": "1ef32d50-89d3-4d91-99ff-b0be939b2f64",
+      "startTime": "2023-11-10T14:30:00.000000Z",
+      "endTime": "2023-11-10T16:00:00.000000Z",
+      "description": "Seminar",
+      "title": "Leadership Strategies",
+      "location": "Conference Center",
+      "attendants": ["Ethan R.", "Sophia M.", "William D.", "Olivia P."]
+    },
+    {
+      "id": "1dd034a7-3df0-43bc-9db4-ffafff12eabf",
+      "startTime": "2023-11-15T10:00:00.000000Z",
+      "endTime": "2023-11-15T11:30:00.000000Z",
+      "description": "Project Meeting",
+      "title": "Status Update",
+      "location": "Office Conference Room",
+      "attendants": ["James A.", "Emily S.", "Daniel K."]
+    },
+    {
+      "id": "04b22dc4-2e7b-4a56-8c0f-bafed2678bcf",
+      "startTime": "2023-11-15T14:00:00.000000Z",
+      "endTime": "2023-11-15T15:30:00.000000Z",
+      "description": "Product Training",
+      "title": "New Features Demo",
+      "location": "Training Room A",
+      "attendants": ["Sophie P.", "Noah H.", "Charlotte G.", "Jacob L."]
+    },
+    {
+      "id": "9debc0e0-49ab-48f1-b4e1-40a7f394cd0e",
+      "startTime": "2023-11-15T14:00:00.000000Z",
+      "endTime": "2023-11-15T16:00:00.000000Z",
+      "description": "Conference",
+      "title": "Digital Marketing Strategies",
+      "location": "Convention Center",
+      "attendants": ["Oliver W.", "Sophia R.", "William K.", "Emma M."]
+    },
+    {
+      "id": "29dc26b5-9b6c-4e71-879f-f3aeb50d1377",
+      "startTime": "2023-11-20T09:30:00.000000Z",
+      "endTime": "2023-11-20T11:00:00.000000Z",
+      "description": "Workshop",
+      "title": "Presentation Skills",
+      "location": "Training Room B",
+      "attendants": ["Lucas G.", "Mia W.", "Henry N.", "Ava D."]
+    },
+    {
+      "id": "84ffcd4e-126c-41f2-9e1b-dab69869db35",
+      "startTime": "2023-11-20T14:30:00.000000Z",
+      "endTime": "2023-11-20T16:00:00.000000Z",
+      "description": "Seminar",
+      "title": "Effective Teamwork",
+      "location": "Conference Center",
+      "attendants": ["Ethan B.", "Sophia J.", "William S.", "Olivia L."]
+    },
+    {
+      "id": "50c64979-d862-4e02-97b3-9d5e7500f073",
+      "startTime": "2023-11-25T10:00:00.000000Z",
+      "endTime": "2023-11-25T11:30:00.000000Z",
+      "description": "Project Meeting",
+      "title": "Task Allocation",
+      "location": "Office Conference Room",
+      "attendants": ["James C.", "Emily M.", "Daniel P."]
+    },
+    {
+      "id": "fbb08f50-3b4c-4d4a-b93f-4e50f9ce9c37",
+      "startTime": "2023-11-25T14:00:00.000000Z",
+      "endTime": "2023-11-25T15:30:00.000000Z",
+      "description": "Product Training",
+      "title": "Advanced Features Workshop",
+      "location": "Training Room A",
+      "attendants": ["Sophie H.", "Noah L.", "Charlotte D.", "Jacob M."]
+    },
+    {
+      "id": "7c61bfb3-715a-4b80-9a6d-97351584d87d",
+      "startTime": "2023-05-05T09:30:00.000000Z",
+      "endTime": "2023-05-05T11:00:00.000000Z",
+      "description": "Conference",
+      "title": "Digital Transformation",
+      "location": "Convention Center",
+      "attendants": ["Oliver C.", "Sophia G.", "William J.", "Emma N."]
+    },
+    {
+      "id": "514144f0-53f4-4384-9c18-8e3199573513",
+      "startTime": "2023-05-05T14:30:00.000000Z",
+      "endTime": "2023-05-05T16:00:00.000000Z",
+      "description": "Seminar",
+      "title": "Innovation Strategies",
+      "location": "Conference Center",
+      "attendants": ["Ethan L.", "Sophia P.", "William H.", "Olivia G."]
+    },
+    {
+      "id": "fcab126f-0196-49e1-8eae-34f5738152e2",
+      "startTime": "2023-05-10T10:00:00.000000Z",
+      "endTime": "2023-05-10T11:30:00.000000Z",
+      "description": "Workshop",
+      "title": "Effective Leadership",
+      "location": "Training Room B",
+      "attendants": ["Lucas D.", "Mia M.", "Henry P.", "Ava S."]
+    },
+    {
+      "id": "8cf827b0-1a30-4590-9091-8dcfaeae9d60",
+      "startTime": "2023-05-10T14:00:00.000000Z",
+      "endTime": "2023-05-10T15:30:00.000000Z",
+      "description": "Conference",
+      "title": "Data Analytics",
+      "location": "Convention Center",
+      "attendants": ["Oliver K.", "Sophia W.", "William N.", "Emma L."]
+    },
+    {
+      "id": "cbe360c0-2e66-4cbe-9892-1f8fd5f0415f",
+      "startTime": "2023-05-15T09:30:00.000000Z",
+      "endTime": "2023-05-15T11:00:00.000000Z",
+      "description": "Training Session",
+      "title": "Effective Communication",
+      "location": "Training Room A",
+      "attendants": ["Lucas G.", "Mia H.", "Henry C.", "Ava L."]
+    },
+    {
+      "id": "d307cf6e-5d8d-4c18-a78c-dc97ee2a0f1e",
+      "startTime": "2023-05-15T14:30:00.000000Z",
+      "endTime": "2023-05-15T16:00:00.000000Z",
+      "description": "Seminar",
+      "title": "Leadership Strategies",
+      "location": "Conference Center",
+      "attendants": ["Ethan R.", "Sophia M.", "William D.", "Olivia P."]
+    },
+    {
+      "id": "28dbf23c-2e6d-450e-b25d-0e0653b6d7a1",
+      "startTime": "2023-05-20T09:30:00.000000Z",
+      "endTime": "2023-05-20T11:00:00.000000Z",
+      "description": "Workshop",
+      "title": "Presentation Skills",
+      "location": "Training Room B",
+      "attendants": ["Lucas G.", "Mia W.", "Henry N.", "Ava D."]
+    },
+    {
+      "id": "aa7c6c99-83d5-4180-a129-bd743c80b1c9",
+      "startTime": "2023-05-20T14:30:00.000000Z",
+      "endTime": "2023-05-20T16:00:00.000000Z",
+      "description": "Seminar",
+      "title": "Effective Teamwork",
+      "location": "Conference Center",
+      "attendants": ["Ethan B.", "Sophia J.", "William S.", "Olivia L."]
+    },
+    {
       "id": "5730386c-21e2-45ff-8c56-9b8a44f9e5e7",
       "startTime": "2023-06-30T10:00:00.000000Z",
       "endTime": "2023-06-30T11:30:00.000000Z",
