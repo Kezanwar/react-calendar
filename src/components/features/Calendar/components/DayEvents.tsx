@@ -8,7 +8,7 @@ import { RootState } from '@app/types/store';
 import { AddEventBtn } from '@app/components/buttons/AddEventBtn';
 
 import { IEvent } from '@app/types/events';
-import { cc } from '@app/util/styles/styles.util';
+import { cc, getColorByName } from '@app/util/styles/styles.util';
 
 type Props = {
   selectedDay: Date;
@@ -70,13 +70,17 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
                 <div className="flex flex-wrap gap-4">
                   {ev?.attendants?.length
                     ? ev.attendants.map((att) => {
+                        const firstLetter = att.charAt(0);
                         return (
                           <div className="flex items-center gap-2">
-                            <img
-                              className="h-6 aspect-square rounded-full"
-                              src="https://i.pravatar.cc/300"
-                              alt=""
-                            />
+                            <div
+                              className={cc([
+                                'h-6 aspect-square rounded-full flex justify-center items-center ',
+                                getColorByName(firstLetter)
+                              ])}
+                            >
+                              {firstLetter}
+                            </div>
                             <p className="text-[12px]">{att}</p>
                           </div>
                         );

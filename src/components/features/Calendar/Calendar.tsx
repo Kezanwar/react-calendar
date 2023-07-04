@@ -61,7 +61,7 @@ const Calendar: React.FC = () => {
 
   return (
     <div className="is-container CalendarSection">
-      <div className="my-20 grid md:grid-cols-2 max-w-[100vw]  ">
+      <div className="my-20 grid md:grid-cols-2 max-w-[100vw] overflow-y-hidden  ">
         <div className="w-full max-w-[100%] mx-auto lg:max-w-[500px] md:p-6 md:pt-12">
           <CalendarControls
             month={month}
