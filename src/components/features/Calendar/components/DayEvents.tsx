@@ -47,7 +47,7 @@ type EventItemsProps = {
 
 const EventItems: React.FC<EventItemsProps> = ({ events }) => {
   return (
-    <motion.div className="">
+    <div className="">
       {events.map((ev, i) => {
         return (
           <motion.div
@@ -65,7 +65,9 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
             <div className="flex justify-between">
               <div className="max-w-[80%]">
                 <h2 className="text-2xl mb-1">{ev.title}</h2>
-                <p className="text-sm  text-gray-500 mb-4">{ev.description}</p>
+                <p className="text-sm  text-gray-500 mb-4">
+                  {ev.description + ' @ ' + ev.location}
+                </p>
                 <h4 className="mb-2 text-[14px] text-gray-500">Attendants</h4>
                 <div className="flex flex-wrap gap-4">
                   {ev?.attendants?.length
@@ -89,12 +91,18 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
                 </div>
               </div>
               <div>
-                <p className="text-[12px] text-right dark:font-semibold mb-2 bg-green-50 dark:bg-green-200 p-1 rounded-md text-green-800">
-                  {format(new Date(ev.startTime), 'kk:mm aaa')}
-                </p>
-                <p className="text-[12px] text-right dark:font-semibold bg-red-50 dark:bg-red-300 p-1 rounded-md text-red-800">
-                  {format(new Date(ev.endTime), 'kk:mm aaa')}
-                </p>
+                <div className="flex items-center justify-between gap-2">
+                  <div className="bg-green-400 dark:bg-green-300 h-2 w-2 rounded-lg" />
+                  <p className="text-[12px] text-right flex-1 ">
+                    {format(new Date(ev.startTime), 'kk:mm aaa')}
+                  </p>
+                </div>
+                <div className="flex items-center justify-between gap-2">
+                  <div className="bg-red-400 dark:bg-red-400 h-2 w-2 rounded-lg" />
+                  <p className="text-[12px] text-right  flex-1">
+                    {format(new Date(ev.endTime), 'kk:mm aaa')}
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -103,7 +111,7 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
       <div className="flex justify-end mt-12">
         <AddEventBtn />
       </div>
-    </motion.div>
+    </div>
   );
 };
 

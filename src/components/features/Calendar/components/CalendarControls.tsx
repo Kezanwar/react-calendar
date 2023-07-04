@@ -20,7 +20,7 @@ const CalendarControls: React.FC<Props> = ({
   handlePrevMonth
 }) => {
   return (
-    <div className="__text flex items-center justify-between py-6">
+    <div className="__text flex items-center justify-between pb-6">
       <div className="flex items-center gap-1 font-bold bg-black text-white dark:border-none  dark:bg-gray-900 dark:text-white p-3 rounded-md">
         <span className=" ">
           {month} {year}
