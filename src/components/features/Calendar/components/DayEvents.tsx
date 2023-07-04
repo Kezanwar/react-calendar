@@ -84,11 +84,11 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
                     : ''}
                 </div>
               </div>
-              <div className="">
-                <p className="text-[12px] text-right dark:font-semibold mb-2 bg-green-50 dark:bg-green-200 p-1 rounded-md text-green-700">
+              <div>
+                <p className="text-[12px] text-right dark:font-semibold mb-2 bg-green-50 dark:bg-green-200 p-1 rounded-md text-green-800">
                   {format(new Date(ev.startTime), 'kk:mm aaa')}
                 </p>
-                <p className="text-[12px] text-right dark:font-semibold bg-red-50 dark:bg-red-300 p-1 rounded-md text-red-700">
+                <p className="text-[12px] text-right dark:font-semibold bg-red-50 dark:bg-red-300 p-1 rounded-md text-red-800">
                   {format(new Date(ev.endTime), 'kk:mm aaa')}
                 </p>
               </div>
@@ -96,6 +96,9 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
           </motion.div>
         );
       })}
+      <div className="flex justify-end mt-12">
+        <AddEventBtn />
+      </div>
     </motion.div>
   );
 };

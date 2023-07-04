@@ -9,6 +9,7 @@
       height: 50%;
       max-height: 600px;
       width: 1.5px;
+      transform: translateX(-50%);
       @apply hidden md:block bg-gray-200 dark:bg-gray-800;
     }
   }
