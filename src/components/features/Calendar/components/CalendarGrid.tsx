@@ -3,9 +3,10 @@ import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 import { isBefore, isSameDay, isSameMonth, isToday } from 'date-fns';
 
-import { cndClass } from '@app/util/styles/styles.util';
+import { cc } from '@app/util/styles/styles.util';
 
 import { RootState } from '@app/types/store';
+import { days } from '../../../../util/calendar/calendar.util';
 
 type Props = {
   chosenMonth: Date;
@@ -22,7 +23,7 @@ const buttonDefaultClass =
 const itemDefaultClass = '__text p-2 py-3 flex items-center justify-center';
 
 const itemBorderBottomClass =
-  'border-b-[1px] border-b-gray-200 dark:border-b-gray-800';
+  'border-b-[2px] border-b-gray-200 dark:border-b-gray-800';
 
 const CalendarGrid: React.FC<Props> = React.memo(
   ({
@@ -51,15 +52,15 @@ const CalendarGrid: React.FC<Props> = React.memo(
         className="grid grid-cols-7 w-full grid-rows-7"
       >
         {calendarMonth.map((date, i) => {
-          const dayEvents = thisMonthEvents?.filter((ev) =>
-            isSameDay(date, new Date(ev.startTime))
-          );
-
-          const l = dayEvents?.length;
+          const l = thisMonthEvents?.reduce((prevVal, currentEl) => {
+            if (isSameDay(date, new Date(currentEl.startTime))) {
+              return prevVal + 1;
+            } else return prevVal;
+          }, 0);
 
           return (
             <div
-              className={cndClass([
+              className={cc([
                 itemDefaultClass,
                 calendarMonth.length === 35 && i < 28
                   ? itemBorderBottomClass
@@ -69,8 +70,8 @@ const CalendarGrid: React.FC<Props> = React.memo(
               ])}
             >
               <button
-                onClick={() => handleSelectDay(date)}
-                className={cndClass([
+                onClick={() => handleSelectDay(new Date(date))}
+                className={cc([
                   buttonDefaultClass,
                   isToday(date)
                     ? ' bg-rose-50 text-black dark:bg-gray-800 dark:text-white hover:bg-rose-300 dark:hover:bg-gray-700 dark:hover:text-white'
@@ -80,19 +81,19 @@ const CalendarGrid: React.FC<Props> = React.memo(
                     : '',
                   isSameDay(selectedDay, date)
                     ? 'border-2 border-black dark:border-white'
-                    : 'border-2 border-gray-200 dark:border-gray-800 hover:bg-slate-100 dark:hover:bg-gray-900'
+                    : 'border-2 border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900'
                 ])}
               >
                 <p>{date.getDate()}</p>
                 {l ? (
                   <div
-                    className={cndClass([
-                      'absolute top-0 right-0 translate-y-[-25%] p-1 w-[19px] h-[19px] flex items-center justify-center rounded-full text-[12px] font-bold ',
+                    className={cc([
+                      'absolute top-0 right-0 translate-y-[-35%] p-1 w-[19px] h-[19px] scale-105 flex items-center justify-center rounded-full text-[12px] font-bold ',
                       l === 1
-                        ? 'bg-green-300 dark:bg-green-400 text-green-800'
+                        ? 'bg-green-200 dark:bg-green-300 text-green-800'
                         : l < 3
-                        ? 'bg-yellow-300 dark:bg-yellow-400 text-yellow-800'
-                        : 'bg-red-300 dark:bg-red-400 text-red-800'
+                        ? 'bg-yellow-300 dark:bg-yellow-300 text-yellow-800'
+                        : 'bg-red-300 dark:bg-red-300 text-red-800'
                     ])}
                   >
                     {l}

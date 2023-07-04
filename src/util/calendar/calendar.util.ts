@@ -22,3 +22,5 @@ export const getCalendarMonth = (arg = new Date()) => {
     month: format(start, 'MMM')
   };
 };
+
+export const days = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];

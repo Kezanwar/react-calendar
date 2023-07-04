@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import './Calendar.module.scss';
 
 // calendar utils
-import { addMonths, subMonths } from 'date-fns';
+import { addMonths, startOfMonth, subMonths } from 'date-fns';
 import { getCalendarMonth } from '@app/util/calendar/calendar.util';
 
 // redux
@@ -12,6 +12,7 @@ import { fetchEventsAction } from '@app/store/slices/events/events.actions';
 
 // components
 import { CalendarGrid, CalendarControls, DayEvents } from './components';
+import CalendarDays from './components/CalendarDays';
 
 const Calendar: React.FC = () => {
   const [chosenMonth, setChosenMonth] = useState(new Date());
@@ -41,11 +42,13 @@ const Calendar: React.FC = () => {
   const handleNextMonth = () => {
     const nextMonth = addMonths(chosenMonth, 1);
     setChosenMonth(nextMonth);
+    // setSelectedDay(startOfMonth(nextMonth));
   };
 
   const handlePrevMonth = () => {
     const prevMonth = subMonths(chosenMonth, 1);
     setChosenMonth(prevMonth);
+    // setSelectedDay(startOfMonth(prevMonth));
   };
 
   const handleUpdatePrevRef = () => {
@@ -57,8 +60,8 @@ const Calendar: React.FC = () => {
   };
 
   return (
-    <div className="is-container">
-      <div className="my-20 grid md:grid-cols-2  min-h-[70vh] overflow-x-hidden">
+    <div className="is-container CalendarSection">
+      <div className="my-20 grid md:grid-cols-2 max-w-[100vw]  ">
         <div className="w-full max-w-[100%] mx-auto lg:max-w-[500px] md:p-6 md:pt-12">
           <CalendarControls
             month={month}
@@ -66,7 +69,7 @@ const Calendar: React.FC = () => {
             handleNextMonth={handleNextMonth}
             handlePrevMonth={handlePrevMonth}
           />
-
+          <CalendarDays />
           <CalendarGrid
             calendarMonth={calendarMonth}
             key={chosenMonth.toISOString()}
@@ -77,8 +80,11 @@ const Calendar: React.FC = () => {
             handleSelectDay={handleSelectDay}
           />
         </div>
-
-        <div className=" p-2 md:border-l-[1px] md:border-l-gray-300 md:dark:border-l-gray-700 w-full h-full"></div>
+        <div className="right-container p-2  w-full h-full mt-12 md:mt-0  md:p-6 md:pt-12">
+          <div className="w-full max-w-[100%] mx-auto lg:max-w-[500px]">
+            <DayEvents selectedDay={selectedDay} />
+          </div>
+        </div>
       </div>
     </div>
   );
