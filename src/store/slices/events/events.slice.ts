@@ -1,7 +1,6 @@
 import { createSlice, PayloadAction, createAsyncThunk } from '@reduxjs/toolkit';
 import { IEvent } from '@app/types/events';
 import { ErrorObject } from '@app/types/error';
-import { getEvents } from '../../../api/events.api';
 
 // types
 

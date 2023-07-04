@@ -46,7 +46,7 @@ const CalendarGrid: React.FC<Props> = React.memo(
     return (
       <motion.div
         onAnimationComplete={handleUpdatePrevRef}
-        initial={{ x: isPrevious ? -60 : 60, opacity: 0.5 }}
+        initial={{ x: isPrevious ? -80 : 80, opacity: 0.5 }}
         animate={{ x: 0, opacity: 1 }}
         className="grid grid-cols-7 w-full grid-rows-7"
       >

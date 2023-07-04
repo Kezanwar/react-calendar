@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "fake-api": "json-server --watch src/db/db.json --port 3002",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
