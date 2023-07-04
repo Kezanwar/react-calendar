@@ -1,6 +1,7 @@
 import {
   eachDayOfInterval,
   endOfWeek,
+  format,
   lastDayOfMonth,
   startOfMonth,
   startOfWeek
@@ -15,5 +16,9 @@ export const getCalendarMonth = (arg = new Date()) => {
     end: endOfWeek(last)
   });
 
-  return month;
+  return {
+    calendarMonth: month,
+    year: start.getFullYear(),
+    month: format(start, 'MMM')
+  };
 };
