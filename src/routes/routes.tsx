@@ -7,7 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 // layouts
 
 // pages
-import Calendar from '../pages/Calendar/Calendar';
+import Home from '../pages/Home/Home';
 
 // config
 
@@ -17,10 +17,10 @@ const Router: React.FC = () => {
   const elements = useRoutes([
     {
       path: '/',
-      element: <Calendar />
+      element: <Home />
     },
 
-    { path: '*', element: <Calendar /> }
+    { path: '*', element: <Home /> }
   ]);
   const location = useLocation();
   if (!elements) return null;

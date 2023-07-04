@@ -13,13 +13,15 @@ export const fetchErrorHandler = (
   const { error, onError } = errorHandlerOptions;
   const apiErr = error as ErrorObject;
 
-  console.error(error);
-
+  console.log(error);
+  console.log(typeof error);
   if (typeof error === 'string') {
     onError({ message: error || genericErrMsg, statusCode: 500 });
   } else if (apiErr?.message && apiErr?.statusCode) {
+    console.log('api-error');
     onError(apiErr);
   } else {
+    console.log('api-error');
     onError({ message: genericErrMsg, statusCode: 500 });
   }
 };
