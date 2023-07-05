@@ -1,6 +1,6 @@
 import { days } from '@app/util/calendar/calendar.util';
 
-const CalendarDays = () => {
+const CalendarDays: React.FC = () => {
   return (
     <div className="grid grid-cols-7 w-full grid-rows-7">
       {days.map((d) => {
