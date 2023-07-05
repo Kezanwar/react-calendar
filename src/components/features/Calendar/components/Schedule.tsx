@@ -1,15 +1,15 @@
-import React, { Suspense, useDeferredValue, useMemo } from 'react';
+import React, { Suspense, useMemo } from 'react';
 import { format, isBefore, isSameDay } from 'date-fns';
 import { motion } from 'framer-motion';
 
 import { useSelector } from 'react-redux';
 import { RootState } from '@app/types/store';
+import { IEvent } from '@app/types/events';
 
 import { AddEventBtn } from '@app/components/buttons/AddEventBtn';
+import { LoadingSpinner } from '@app/components/elements/LoadingSpinner';
 
-import { IEvent } from '@app/types/events';
 import { cc, getColorByName } from '@app/util/styles/styles.util';
-import { LoadingSpinner } from '../../../elements/LoadingSpinner';
 
 type Props = {
   selectedDay: Date;
