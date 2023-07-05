@@ -8,6 +8,10 @@ import { getCalendarMonth } from '@app/util/calendar/calendar.util';
 import { AppDispatch, RootState } from '@app/types/store';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchEventsAction } from '@app/store/slices/events/events.actions';
+import {
+  setChosenMonth,
+  setSelectedDay
+} from '@app/store/slices/calendar/calendar.slice';
 
 // components
 import {
@@ -18,8 +22,12 @@ import {
 } from './components';
 
 const Calendar: React.FC = () => {
-  const [chosenMonth, setChosenMonth] = useState(new Date());
-  const [selectedDay, setSelectedDay] = useState(new Date());
+  const chosenMonth = useSelector(
+    (state: RootState) => state.calendar.chosenMonth
+  );
+  const selectedDay = useSelector(
+    (state: RootState) => state.calendar.selectedDay
+  );
 
   const calMonth = useMemo(() => {
     const { calendarMonth, year, month } = getCalendarMonth(chosenMonth);
@@ -44,13 +52,13 @@ const Calendar: React.FC = () => {
 
   const handleNextMonth = () => {
     const nextMonth = addMonths(chosenMonth, 1);
-    setChosenMonth(nextMonth);
+    dispatch(setChosenMonth(nextMonth));
     // setSelectedDay(startOfMonth(nextMonth));
   };
 
   const handlePrevMonth = () => {
     const prevMonth = subMonths(chosenMonth, 1);
-    setChosenMonth(prevMonth);
+    dispatch(setChosenMonth(prevMonth));
     // setSelectedDay(startOfMonth(prevMonth));
   };
 
@@ -59,7 +67,7 @@ const Calendar: React.FC = () => {
   };
 
   const handleSelectDay = (date: Date) => {
-    setSelectedDay(date);
+    dispatch(setSelectedDay(date));
   };
 
   return (
