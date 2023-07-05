@@ -6,7 +6,6 @@ import { isBefore, isSameDay, isSameMonth, isToday } from 'date-fns';
 import { cc } from '@app/util/styles/styles.util';
 
 import { RootState } from '@app/types/store';
-import { days } from '../../../../util/calendar/calendar.util';
 
 type Props = {
   chosenMonth: Date;
@@ -20,7 +19,8 @@ type Props = {
 const buttonDefaultClass =
   ' rounded-full flex items-center cursor-pointer justify-center w-[50px]  aspect-[1/1] active:scale-90 transition-all relative';
 
-const itemDefaultClass = '__text p-2 py-3 flex items-center justify-center';
+const itemDefaultClass =
+  '__black-and-white p-2 py-3 flex items-center justify-center';
 
 const itemBorderBottomClass =
   'border-b-[2px] border-b-gray-200 dark:border-b-gray-800';
@@ -45,6 +45,8 @@ const CalendarGrid: React.FC<Props> = React.memo(
     }, [chosenMonth, events]);
 
     return (
+      // calendar grid animated container
+      // uses a previous and current reference *isPrevious* to decide which side to animate in from
       <motion.div
         onAnimationComplete={handleUpdatePrevRef}
         initial={{ x: isPrevious ? -80 : 80, opacity: 0.5 }}
@@ -52,14 +54,17 @@ const CalendarGrid: React.FC<Props> = React.memo(
         className="grid grid-cols-7 w-full grid-rows-7"
       >
         {calendarMonth.map((date, i) => {
-          const l = thisMonthEvents?.reduce((prevVal, currentEl) => {
+          // get count of events on this day for indicator
+          const count = thisMonthEvents?.reduce((prevVal, currentEl) => {
             if (isSameDay(date, new Date(currentEl.startTime))) {
               return prevVal + 1;
             } else return prevVal;
           }, 0);
 
           return (
+            // calendar grid item
             <div
+              key={date.toISOString()}
               className={cc([
                 itemDefaultClass,
                 calendarMonth.length === 35 && i < 28
@@ -69,6 +74,7 @@ const CalendarGrid: React.FC<Props> = React.memo(
                   : ''
               ])}
             >
+              {/* calendar day button */}
               <button
                 onClick={() => handleSelectDay(new Date(date))}
                 className={cc([
@@ -85,18 +91,19 @@ const CalendarGrid: React.FC<Props> = React.memo(
                 ])}
               >
                 <p>{date.getDate()}</p>
-                {l ? (
+                {/* number inidicator, using a ternary here to avoid printing 0 to the screen */}
+                {count ? (
                   <div
                     className={cc([
-                      'absolute top-0 right-0 translate-y-[-35%] p-1 w-[19px] h-[19px] scale-105 flex items-center justify-center rounded-full text-[12px] font-bold ',
-                      l === 1
+                      'absolute top-0 right-0 translate-y-[-50%]  md:translate-y-[-35%] p-1 w-[19px] h-[19px] md:scale-105 flex items-center justify-center rounded-full text-[12px] font-bold ',
+                      count === 1
                         ? 'bg-green-200 dark:bg-green-300 text-green-800'
-                        : l < 3
+                        : count < 3
                         ? 'bg-yellow-300 dark:bg-yellow-300 text-yellow-800'
                         : 'bg-red-300 dark:bg-red-300 text-red-800'
                     ])}
                   >
-                    {l}
+                    {count}
                   </div>
                 ) : null}
               </button>

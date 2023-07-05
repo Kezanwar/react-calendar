@@ -28,7 +28,7 @@ const ThemeToggle: React.FC = (props) => {
   return (
     <button
       onClick={toggleTheme}
-      className="__text p-2 active:scale-75 transition-all flex items-center gap-2 "
+      className="__black-and-white p-2 active:scale-75 transition-all flex items-center gap-2 "
     >
       {mode === 'light' ? (
         <>

@@ -19,7 +19,7 @@ const Title: React.FC<Props> = ({ selectedDay }) => {
     <motion.h3
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="text-4xl border-b-2 border-b-gray-200 dark:border-b-gray-800 pb-3 mb-12"
+      className="text-[1.6rem] md:text-3xl lg:text-4xl border-b-2 border-b-gray-200 dark:border-b-gray-800 pb-3 mb-12"
     >
       {format(selectedDay, 'EEEE do MMM yyyy')}
     </motion.h3>
@@ -62,9 +62,9 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
                 : ''
             ])}
           >
-            <div className="flex justify-between">
+            <div className="flex justify-between gap-3">
               <div className="max-w-[80%]">
-                <h2 className="text-2xl mb-1">{ev.title}</h2>
+                <h2 className="text-xl md:text-2xl mb-1">{ev.title}</h2>
                 <p className="text-sm  text-gray-500 mb-4">
                   {ev.description + ' @ ' + ev.location}
                 </p>
@@ -74,7 +74,10 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
                     ? ev.attendants.map((att) => {
                         const firstLetter = att.charAt(0);
                         return (
-                          <div className="flex items-center gap-2">
+                          <div
+                            key={ev.id + att}
+                            className="flex items-center gap-2"
+                          >
                             <div
                               className={cc([
                                 'h-6 aspect-square rounded-full flex justify-center items-center ',
@@ -91,13 +94,13 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
                 </div>
               </div>
               <div>
-                <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center whitespace-nowrap justify-between gap-2">
                   <div className="bg-green-400 dark:bg-green-300 h-2 w-2 rounded-lg" />
                   <p className="text-[12px] text-right flex-1 ">
                     {format(new Date(ev.startTime), 'kk:mm aaa')}
                   </p>
                 </div>
-                <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center whitespace-nowrap justify-between gap-2">
                   <div className="bg-red-400 dark:bg-red-400 h-2 w-2 rounded-lg" />
                   <p className="text-[12px] text-right  flex-1">
                     {format(new Date(ev.endTime), 'kk:mm aaa')}
@@ -125,7 +128,7 @@ const DayEvents: React.FC<Props> = ({ selectedDay }) => {
   }, [selectedDay, events]);
 
   return (
-    <div className="__text pb-16">
+    <div className="__black-and-white pb-16">
       <Title selectedDay={selectedDay} />
 
       {!thisDayEvents?.length ? (

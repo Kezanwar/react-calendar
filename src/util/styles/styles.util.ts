@@ -17,8 +17,8 @@ export const getColorByName = (letter: string) => {
     if (['P', 'E', 'R', 'S', 'U'].includes(l))
       return 'bg-purple-200 dark:bg-purple-300 text-purple-800';
     if (['V', 'W', 'X', 'M', 'Z', 'C'].includes(l))
-      return 'bg-pink-200 dark:bg-purple-300 text-pink-800';
-    return 'default';
+      return 'bg-pink-200 dark:bg-pink-300 text-pink-800';
+    return 'bg-cyan-200 dark:bg-cyan-300 text-cyan-800';
   };
 
   return colorByName();
