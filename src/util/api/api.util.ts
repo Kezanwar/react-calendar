@@ -14,7 +14,6 @@ export const fetchErrorHandler = (
   const apiErr = error as ErrorObject;
 
   console.log(error);
-  console.log(typeof error);
   if (typeof error === 'string') {
     onError({ message: error || genericErrMsg, statusCode: 500 });
   } else if (apiErr?.message && apiErr?.statusCode) {

@@ -8,6 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 
 // pages
 import Home from '../pages/Home/Home';
+import { PATH_ADD_EVENT, PATH_HOME } from '../constants/paths.constants';
 
 // config
 
@@ -16,7 +17,11 @@ import Home from '../pages/Home/Home';
 const Router: React.FC = () => {
   const elements = useRoutes([
     {
-      path: '/',
+      path: PATH_HOME,
+      element: <Home />
+    },
+    {
+      path: PATH_ADD_EVENT,
       element: <Home />
     },
 

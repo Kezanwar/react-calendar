@@ -36,7 +36,6 @@ const eventsSlice = createSlice({
       state.isFetched = true;
       state.loading = false;
       state.stale = false;
-      console.log(action);
       state.error = action.payload.message;
     },
     setEventsStale: (state) => {

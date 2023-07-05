@@ -7,7 +7,7 @@ import './Header.module.scss';
 
 const Header: React.FC = (props) => {
   return (
-    <header>
+    <header className="header">
       <div className="is-container flex justify-between items-center py-6 md:py-8">
         <Logo />
         <ThemeToggle />

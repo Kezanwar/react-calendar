@@ -9,12 +9,12 @@ html::-webkit-scrollbar {
 
 /* Track */
 html::-webkit-scrollbar-track {
-  background: rgba(grey, 0.1);
+  @apply bg-gray-800;
 }
 
 /* Handle */
 html::-webkit-scrollbar-thumb {
-  background-color: rgb(63, 63, 63);
+  @apply bg-gray-400;
   border-radius: 20px;
 }
 
