@@ -1,5 +1,5 @@
-import React, { useMemo } from 'react';
-import { format, isSameDay } from 'date-fns';
+import React, { Suspense, useDeferredValue, useMemo } from 'react';
+import { format, isBefore, isSameDay } from 'date-fns';
 import { motion } from 'framer-motion';
 
 import { useSelector } from 'react-redux';
@@ -9,6 +9,7 @@ import { AddEventBtn } from '@app/components/buttons/AddEventBtn';
 
 import { IEvent } from '@app/types/events';
 import { cc, getColorByName } from '@app/util/styles/styles.util';
+import { LoadingSpinner } from '../../../elements/LoadingSpinner';
 
 type Props = {
   selectedDay: Date;
@@ -16,13 +17,16 @@ type Props = {
 
 const Title: React.FC<Props> = ({ selectedDay }) => {
   return (
-    <motion.h3
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="text-[1.6rem] md:text-3xl lg:text-4xl border-b-2 border-b-gray-200 dark:border-b-gray-800 pb-3 mb-12"
-    >
-      {format(selectedDay, 'EEEE do MMM yyyy')}
-    </motion.h3>
+    <div>
+      <p className="text-gray-500 text-[14px] mb-1">Schedule for</p>
+      <motion.h3
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="text-[1.6rem] md:text-3xl lg:text-4xl border-b-2 border-b-gray-200 dark:border-b-gray-800 pb-3 mb-12"
+      >
+        {format(selectedDay, 'EEEE do MMM yyyy')}
+      </motion.h3>
+    </div>
   );
 };
 
@@ -118,26 +122,40 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
   );
 };
 
-const DayEvents: React.FC<Props> = ({ selectedDay }) => {
+const LoadingSchedule: React.FC = () => {
+  return (
+    <div className="flex items-center py-4 gap-2">
+      <LoadingSpinner />
+      <p className="__black-and-white text-[14px]">Loading schedule...</p>
+    </div>
+  );
+};
+
+const Schedule: React.FC<Props> = ({ selectedDay }) => {
   const { events } = useSelector((state: RootState) => state.events);
 
   const thisDayEvents = useMemo(() => {
     return events
-      ? events.filter((ev) => isSameDay(new Date(ev.startTime), selectedDay))
+      ? events
+          .filter((ev) => isSameDay(new Date(ev.startTime), selectedDay))
+          .sort((a, b) =>
+            isBefore(new Date(a.startTime), new Date(b.startTime)) ? -1 : 1
+          )
       : [];
   }, [selectedDay, events]);
 
   return (
     <div className="__black-and-white pb-16">
       <Title selectedDay={selectedDay} />
-
-      {!thisDayEvents?.length ? (
-        <NoEventsMessage />
-      ) : (
-        <EventItems events={thisDayEvents} />
-      )}
+      <Suspense fallback={<LoadingSchedule />}>
+        {!thisDayEvents?.length ? (
+          <NoEventsMessage />
+        ) : (
+          <EventItems events={thisDayEvents} />
+        )}
+      </Suspense>
     </div>
   );
 };
 
-export default DayEvents;
+export default Schedule;

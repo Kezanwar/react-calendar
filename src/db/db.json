@@ -29,8 +29,8 @@
     },
     {
       "id": "2e7dd987-5635-4f5d-b5f9-51b72cb5e91a",
-      "startTime": "2023-07-05T11:00:00.000000Z",
-      "endTime": "2023-07-05T12:30:00.000000Z",
+      "startTime": "2023-07-06T11:00:00.000000Z",
+      "endTime": "2023-07-06T12:30:00.000000Z",
       "description": "Client Meeting",
       "title": "Project Proposal Discussion",
       "location": "Client's Office",
@@ -38,8 +38,8 @@
     },
     {
       "id": "2e7d8887-5635-4f5d-b5f9-5fs72cb5e94l",
-      "startTime": "2023-07-05T13:00:00.000000Z",
-      "endTime": "2023-07-05T14:30:00.000000Z",
+      "startTime": "2023-07-06T13:00:00.000000Z",
+      "endTime": "2023-07-06T14:30:00.000000Z",
       "description": "1-2-1 with Michael",
       "title": "1-2-1",
       "location": "Meeting Room 2",
@@ -47,8 +47,98 @@
     },
     {
       "id": "28788887-5635-lldd-ppp9-5fs72cb5e94l",
-      "startTime": "2023-07-05T15:00:00.000000Z",
-      "endTime": "2023-07-05T16:30:00.000000Z",
+      "startTime": "2023-07-07T15:00:00.000000Z",
+      "endTime": "2023-07-07T16:30:00.000000Z",
+      "description": "1-2-1 with Susan",
+      "title": "1-2-1",
+      "location": "Meeting Room 2",
+      "attendants": ["Susan J."]
+    },
+    {
+      "id": "456d66bb-123a-4bcd-9efg-2h345i6j789k",
+      "startTime": "2023-07-07T09:30:00.000000Z",
+      "endTime": "2023-07-07T10:30:00.000000Z",
+      "description": "Team Meeting",
+      "title": "Team Meeting",
+      "location": "Conference Room",
+      "attendants": ["John D.", "Amy S.", "Mark W."]
+    },
+    {
+      "id": "abcd1234-5678-efgh-ijkl-9012mnop345q",
+      "startTime": "2023-07-09T14:00:00.000000Z",
+      "endTime": "2023-07-09T15:00:00.000000Z",
+      "description": "Lunch with Clients",
+      "title": "Client Lunch",
+      "location": "Restaurant XYZ",
+      "attendants": ["Client A", "Client B"]
+    },
+    {
+      "id": "z9y8x7w6-v5u4-t3s2-r1q0-poinh7b6g5f",
+      "startTime": "2023-07-09T17:00:00.000000Z",
+      "endTime": "2023-07-09T18:30:00.000000Z",
+      "description": "Project Status Update",
+      "title": "Project Meeting",
+      "location": "Office Room 123",
+      "attendants": ["David M.", "Sarah L.", "Michael R.", "Emily P."]
+    },
+    {
+      "id": "lkjhgfd2-9876-asdf-1234-qrst567890uv",
+      "startTime": "2023-07-07T12:30:00.000000Z",
+      "endTime": "2023-07-07T13:30:00.000000Z",
+      "description": "Marketing Strategy Discussion",
+      "title": "Marketing Meeting",
+      "location": "Marketing Department",
+      "attendants": ["Alex K.", "Lisa B.", "Tom R."]
+    },
+    {
+      "id": "pqrs6789-tuvw-xyz1-2345-abcd6789efgh",
+      "startTime": "2023-07-06T09:00:00.000000Z",
+      "endTime": "2023-07-06T10:30:00.000000Z",
+      "description": "Training Session",
+      "title": "Training",
+      "location": "Training Room",
+      "attendants": ["Trainer X.", "Trainer Y."]
+    },
+    {
+      "id": "ijkl9012-mnop-345q-abcd-6789efgh5678",
+      "startTime": "2023-07-06T14:00:00.000000Z",
+      "endTime": "2023-07-06T15:30:00.000000Z",
+      "description": "Product Demo",
+      "title": "Product Presentation",
+      "location": "Demo Room",
+      "attendants": ["John D.", "Amy S.", "Mark W.", "Susan J."]
+    },
+    {
+      "id": "uvwxyz1-2345-abcd-6789-efghijkl9012",
+      "startTime": "2023-07-06T16:00:00.000000Z",
+      "endTime": "2023-07-06T17:00:00.000000Z",
+      "description": "Client Meeting",
+      "title": "Client Meeting",
+      "location": "Client Office",
+      "attendants": ["Client C", "Client D"]
+    },
+    {
+      "id": "6789efgh-ijkl-9012-mnop-345qabcdefg",
+      "startTime": "2023-07-08T13:00:00.000000Z",
+      "endTime": "2023-07-08T14:30:00.000000Z",
+      "description": "Team Brainstorming",
+      "title": "Brainstorming Session",
+      "location": "Office Room 456",
+      "attendants": ["David M.", "Sarah L.", "Michael R."]
+    },
+    {
+      "id": "abcdefg-6789-efgh-ijkl-9012mnop345q",
+      "startTime": "2023-07-08T10:00:00.000000Z",
+      "endTime": "2023-07-08T11:00:00.000000Z",
+      "description": "Weekly Report Review",
+      "title": "Report Review",
+      "location": "Manager's Office",
+      "attendants": ["Manager A.", "Manager B."]
+    },
+    {
+      "id": "28788887-5635-lldd-ppp9-5fs72cb5e94l",
+      "startTime": "2023-07-06T15:00:00.000000Z",
+      "endTime": "2023-07-06T16:30:00.000000Z",
       "description": "1-2-1 with Susan",
       "title": "1-2-1",
       "location": "Meeting Room 2",
@@ -56,8 +146,8 @@
     },
     {
       "id": "3b3eaa5d-45c3-4d3a-a0d3-1abed903011c",
-      "startTime": "2023-07-09T10:30:00.000000Z",
-      "endTime": "2023-07-09T12:00:00.000000Z",
+      "startTime": "2023-07-07T10:30:00.000000Z",
+      "endTime": "2023-07-07T12:00:00.000000Z",
       "description": "Training Workshop",
       "title": "Effective Time Management",
       "location": "Training Room B",

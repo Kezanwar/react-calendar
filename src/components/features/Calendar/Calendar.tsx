@@ -17,7 +17,7 @@ import {
 import {
   CalendarGrid,
   CalendarControls,
-  DayEvents,
+  Schedule,
   CalendarDays
 } from './components';
 import { ErrorLottie } from '@app/components/elements/ErrorLottie';
@@ -39,7 +39,7 @@ const Loading: React.FC = () => {
   return (
     <div className="flex items-center py-4 gap-2">
       <LoadingSpinner />
-      <p className="__black-and-white text-[14px]">Loading your events</p>
+      <p className="__black-and-white text-[14px]">Loading your calendar</p>
     </div>
   );
 };
@@ -118,7 +118,7 @@ const Calendar: React.FC = () => {
         </div>
         <div className="right-container p-2  w-full h-full mt-12 md:mt-0  md:p-6 md:pt-12">
           <div className="w-full max-w-[100%] mx-auto lg:max-w-[500px]">
-            <DayEvents selectedDay={selectedDay} />
+            <Schedule selectedDay={selectedDay} />
           </div>
         </div>
       </div>
