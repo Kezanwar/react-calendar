@@ -1,7 +1,5 @@
 import React, { ReactNode } from 'react';
 
-import './BodyText.module.scss';
-
 type Props = {
   className?: string;
   children: ReactNode;

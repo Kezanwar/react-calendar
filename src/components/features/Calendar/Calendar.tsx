@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import './Calendar.module.scss';
 
 // calendar utils
 import { addMonths, startOfMonth, subMonths } from 'date-fns';

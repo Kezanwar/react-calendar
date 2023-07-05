@@ -6,6 +6,7 @@ const CalendarDays = () => {
       {days.map((d) => {
         return (
           <div
+            key={d}
             className={
               '__black-and-white  p-2 py-3 flex items-center justify-center'
             }
