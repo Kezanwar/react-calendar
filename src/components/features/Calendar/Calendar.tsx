@@ -20,6 +20,18 @@ import {
   DayEvents,
   CalendarDays
 } from './components';
+import { ErrorLottie } from '@app/components/elements/ErrorLottie';
+
+const Error: React.FC = () => {
+  return (
+    <div className="flex items-center gap-2">
+      <ErrorLottie />
+      <p className="__black-and-white">
+        Cannot find your events, check your internet connection or refresh...
+      </p>
+    </div>
+  );
+};
 
 const Calendar: React.FC = () => {
   const chosenMonth = useSelector(
@@ -90,7 +102,7 @@ const Calendar: React.FC = () => {
             selectedDay={selectedDay}
             handleSelectDay={handleSelectDay}
           />
-          {error ? <p>error</p> : ''}
+          {error ? <Error /> : ''}
         </div>
         <div className="right-container p-2  w-full h-full mt-12 md:mt-0  md:p-6 md:pt-12">
           <div className="w-full max-w-[100%] mx-auto lg:max-w-[500px]">
