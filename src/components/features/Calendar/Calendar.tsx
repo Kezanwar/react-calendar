@@ -21,14 +21,25 @@ import {
   CalendarDays
 } from './components';
 import { ErrorLottie } from '@app/components/elements/ErrorLottie';
+import { LoadingSpinner } from '../../elements/LoadingSpinner';
 
 const Error: React.FC = () => {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center py-4 gap-2">
       <ErrorLottie />
-      <p className="__black-and-white">
-        Cannot find your events, check your internet connection or refresh...
+      <p className=" text-red-500 text-[14px]">
+        An error occured fetching your events, check your internet connection or
+        refresh...
       </p>
+    </div>
+  );
+};
+
+const Loading: React.FC = () => {
+  return (
+    <div className="flex items-center py-4 gap-2">
+      <LoadingSpinner />
+      <p className="__black-and-white text-[14px]">Loading your events</p>
     </div>
   );
 };
@@ -102,7 +113,8 @@ const Calendar: React.FC = () => {
             selectedDay={selectedDay}
             handleSelectDay={handleSelectDay}
           />
-          {error ? <Error /> : ''}
+          {error && <Error />}
+          {loading && <Loading />}
         </div>
         <div className="right-container p-2  w-full h-full mt-12 md:mt-0  md:p-6 md:pt-12">
           <div className="w-full max-w-[100%] mx-auto lg:max-w-[500px]">
