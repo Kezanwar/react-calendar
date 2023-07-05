@@ -3,8 +3,6 @@ import React, { ReactNode } from 'react';
 import { RootState } from '@app/types/store';
 import { useSelector } from 'react-redux';
 
-import './ThemeRoot.module.scss';
-
 type Props = {
   children: ReactNode;
 };

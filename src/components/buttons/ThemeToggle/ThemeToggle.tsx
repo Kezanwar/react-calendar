@@ -6,8 +6,6 @@ import { toggle } from '@app/store/slices/theme/theme.slice';
 
 import { MdOutlineDarkMode, MdOutlineWbSunny } from 'react-icons/md';
 
-import './ThemeToggle.module.scss';
-
 const darkIconStyles = {
   color: 'black',
   fontSize: '1.5rem',

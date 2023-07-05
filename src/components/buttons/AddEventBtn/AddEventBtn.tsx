@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './AddEventBtn.module.scss';
 
 import { IoCreateOutline } from 'react-icons/io5';
 

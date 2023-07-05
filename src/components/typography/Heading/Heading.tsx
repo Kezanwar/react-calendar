@@ -1,7 +1,5 @@
 import React, { ReactNode } from 'react';
 
-import './Heading.module.scss';
-
 type Props = {
   variant: 'md' | 'lg';
   className: string;
