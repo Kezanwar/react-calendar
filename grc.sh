@@ -12,7 +12,6 @@
 mkdir src/components/$1/$2 # make new directory in components
 touch src/components/$1/$2/$2.tsx # make component.tsx
 touch src/components/$1/$2/index.ts # make index.ts
-touch src/components/$1/$2/$2.module.scss # make component.module.scss
 touch src/components/$1/$2/$2.stories.ts # make component.stories.ts
 
 
@@ -20,8 +19,6 @@ touch src/components/$1/$2/$2.stories.ts # make component.stories.ts
 # ----- component.tsx ------ create starter functional component
 
 echo "import React from 'react';
-
-import './$2.module.scss'
 
 type Props = {};
 
@@ -38,12 +35,6 @@ export default ${2}; " >  src/components/$1/$2/$2.tsx
 echo "import ${2} from './${2}';
 
 export { ${2} }" >  src/components/$1/$2/index.ts
-
-
-
-# ------ component.module.scss ----- add an empty selector for new component
-
-echo ".${2} {}" > src/components/$1/$2/$2.module.scss
 
 
 
