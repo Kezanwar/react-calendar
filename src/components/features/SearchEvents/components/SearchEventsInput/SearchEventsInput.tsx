@@ -13,7 +13,7 @@ interface InputProps {
 const SearchEventsInput: React.FC<InputProps> = ({ loading, ...rest }) => {
   return (
     <div className="w-full max-w-[500px]">
-      <p className="text-gray-500 text-[14px] mb-6 justify-center flex items-center gap-1">
+      <p className="text-gray-500 text-[14px] mb-6 justify-center flex flex-col lg:flex-row text-center items-center gap-1">
         <LuCalendarSearch /> Search your calendar by event name, description or
         attendees
       </p>

@@ -7,6 +7,7 @@ import { AddEventBtn } from '@app/components/buttons/AddEventBtn';
 import { LoadingSpinner } from '@app/components/elements/LoadingSpinner';
 import { EventItems } from '@app/components/features/EventItems';
 import { useGetAllEventsQuery } from '../../../../store/services/events.services';
+import { capitalizeWord } from '../../../../util/strings/strings.util';
 
 type Props = {
   selectedDay: Date;
