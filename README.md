@@ -2,25 +2,25 @@
 
 ## USAGE
 
-### quick generate a component using grc.sh - usage is explained in script comments
+### Quick create a component using grc.sh - usage is explained within the script comments
 
-### uses json server to serve calendar events from a fake-api
+### Uses JSON-Server to serve Calendar Events from a fake-api - I think you can simply run it locally from the projects node_modules, if that doesnt work you will have to have to install it globally - https://www.npmjs.com/package/json-server
 
-### json server has a small delay added in pkg.json to mimic back end loading time, to mimic an error thrown from the backend just run the front end without JSON server and try to hit / or /search
+### JSON-Server has a small delay added in pkg.json to mimic back end loading time, to mimic an error thrown from the backend just run the FE without JSON-Server and try to hit / or /search
 
-### run front end
+### run FE
 
 ```
 yarn dev
 ```
 
-### run json server
+### run JSON-Server
 
 ```
 yarn fake-api
 ```
 
-### run storybook and jest tests with these 2 commands
+### run Storybook and Jest tests with these 2 commands
 
 ```
 yarn storybook
