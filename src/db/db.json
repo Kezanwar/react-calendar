@@ -13,7 +13,7 @@
       "id": "f8d06b5e-2d12-4c3b-89d6-5dc9c77b1371",
       "startTime": "2023-02-15T09:30:00.000000Z",
       "endTime": "2023-02-15T12:30:00.000000Z",
-      "description": "Team Meeting",
+      "description": "Team meeting",
       "title": "Project Update",
       "location": "Office Conference Room",
       "attendants": ["John S.", "Emily W.", "David L."]
@@ -22,33 +22,123 @@
       "id": "1e12a73d-0459-4e0f-af5e-3d19c8b7a62e",
       "startTime": "2023-07-01T14:00:00.000000Z",
       "endTime": "2023-07-01T15:30:00.000000Z",
-      "description": "Brainstorming Session",
+      "description": "Brainstorming session",
       "title": "New Ideas Generation",
       "location": "Conference Room A",
       "attendants": ["Sarah T.", "Mark R.", "Laura B.", "Daniel M."]
     },
     {
       "id": "2e7dd987-5635-4f5d-b5f9-51b72cb5e91a",
-      "startTime": "2023-07-05T11:00:00.000000Z",
-      "endTime": "2023-07-05T12:30:00.000000Z",
-      "description": "Client Meeting",
+      "startTime": "2023-07-06T11:00:00.000000Z",
+      "endTime": "2023-07-06T12:30:00.000000Z",
+      "description": "Client meeting",
       "title": "Project Proposal Discussion",
       "location": "Client's Office",
       "attendants": ["Michael P.", "Sophie K.", "Oliver H."]
     },
     {
       "id": "2e7d8887-5635-4f5d-b5f9-5fs72cb5e94l",
-      "startTime": "2023-07-05T13:00:00.000000Z",
-      "endTime": "2023-07-05T14:30:00.000000Z",
+      "startTime": "2023-07-06T13:00:00.000000Z",
+      "endTime": "2023-07-06T14:30:00.000000Z",
       "description": "1-2-1 with Michael",
       "title": "1-2-1",
       "location": "Meeting Room 2",
       "attendants": ["Michael P."]
     },
     {
+      "id": "28788887-5635-lldd-ppp9-5fs72cbxz94l",
+      "startTime": "2023-07-07T15:00:00.000000Z",
+      "endTime": "2023-07-07T16:30:00.000000Z",
+      "description": "1-2-1 with Susan",
+      "title": "1-2-1",
+      "location": "Meeting Room 2",
+      "attendants": ["Susan J."]
+    },
+    {
+      "id": "456d66bb-123a-4bcd-9efg-2h345i6j789k",
+      "startTime": "2023-07-07T09:30:00.000000Z",
+      "endTime": "2023-07-07T10:30:00.000000Z",
+      "description": "Team meeting",
+      "title": "Team Meeting",
+      "location": "Conference Room",
+      "attendants": ["John D.", "Amy S.", "Mark W."]
+    },
+    {
+      "id": "abcd1234-5678-efgh-ijkl-9012mnop345q",
+      "startTime": "2023-07-09T14:00:00.000000Z",
+      "endTime": "2023-07-09T15:00:00.000000Z",
+      "description": "Lunch with clients",
+      "title": "Client Lunch",
+      "location": "Restaurant XYZ",
+      "attendants": ["Client A", "Client B"]
+    },
+    {
+      "id": "z9y8x7w6-v5u4-t3s2-r1q0-poinh7b6g5f",
+      "startTime": "2023-07-09T17:00:00.000000Z",
+      "endTime": "2023-07-09T18:30:00.000000Z",
+      "description": "Project status update",
+      "title": "Project Meeting",
+      "location": "Office Room 123",
+      "attendants": ["David M.", "Sarah L.", "Michael R.", "Emily P."]
+    },
+    {
+      "id": "lkjhgfd2-9876-asdf-1234-qrst567890uv",
+      "startTime": "2023-07-07T12:30:00.000000Z",
+      "endTime": "2023-07-07T13:30:00.000000Z",
+      "description": "Marketing strategy discussion",
+      "title": "Marketing Meeting",
+      "location": "Marketing Department",
+      "attendants": ["Alex K.", "Lisa B.", "Tom R."]
+    },
+    {
+      "id": "pqrs6789-tuvw-xyz1-2345-abcd6789efgh",
+      "startTime": "2023-07-06T09:00:00.000000Z",
+      "endTime": "2023-07-06T10:30:00.000000Z",
+      "description": "Training session",
+      "title": "Training",
+      "location": "Training Room",
+      "attendants": ["Trainer X.", "Trainer Y."]
+    },
+    {
+      "id": "ijkl9012-mnop-345q-abcd-6789efgh5678",
+      "startTime": "2023-07-06T14:00:00.000000Z",
+      "endTime": "2023-07-06T15:30:00.000000Z",
+      "description": "Product demo",
+      "title": "Product Presentation",
+      "location": "Demo Room",
+      "attendants": ["John D.", "Amy S.", "Mark W.", "Susan J."]
+    },
+    {
+      "id": "uvwxyz1-2345-abcd-6789-efghijkl9012",
+      "startTime": "2023-07-06T16:00:00.000000Z",
+      "endTime": "2023-07-06T17:00:00.000000Z",
+      "description": "Client meeting",
+      "title": "Client Meeting",
+      "location": "Client Office",
+      "attendants": ["Client C", "Client D"]
+    },
+    {
+      "id": "6789efgh-ijkl-9012-mnop-345qabcdefg",
+      "startTime": "2023-07-08T13:00:00.000000Z",
+      "endTime": "2023-07-08T14:30:00.000000Z",
+      "description": "Team brainstorming",
+      "title": "Brainstorming Session",
+      "location": "Office Room 456",
+      "attendants": ["David M.", "Sarah L.", "Michael R."]
+    },
+    {
+      "id": "abcdefg-6789-efgh-ijkl-9012mnop345q",
+      "startTime": "2023-07-08T10:00:00.000000Z",
+      "endTime": "2023-07-08T11:00:00.000000Z",
+      "description": "Weekly report review",
+      "title": "Report Review",
+      "location": "Manager's Office",
+      "attendants": ["Manager A.", "Manager B."]
+    },
+    {
       "id": "28788887-5635-lldd-ppp9-5fs72cb5e94l",
-      "startTime": "2023-07-05T15:00:00.000000Z",
-      "endTime": "2023-07-05T16:30:00.000000Z",
+      "startTime": "2023-07-06T15:00:00.000000Z",
+      "endTime": "2023-07-06T16:30:00.000000Z",
       "description": "1-2-1 with Susan",
       "title": "1-2-1",
       "location": "Meeting Room 2",
@@ -56,9 +146,9 @@
     },
     {
       "id": "3b3eaa5d-45c3-4d3a-a0d3-1abed903011c",
-      "startTime": "2023-07-09T10:30:00.000000Z",
-      "endTime": "2023-07-09T12:00:00.000000Z",
-      "description": "Training Workshop",
+      "startTime": "2023-07-07T10:30:00.000000Z",
+      "endTime": "2023-07-07T12:00:00.000000Z",
+      "description": "Training workshop",
       "title": "Effective Time Management",
       "location": "Training Room B",
       "attendants": ["Emily R.", "Andrew B.", "Natalie G.", "Joshua C."]
@@ -67,7 +157,7 @@
       "id": "4b6cddcf-9990-45a9-a7e4-1fvffh1b6657",
       "startTime": "2023-07-15T15:00:00.000000Z",
       "endTime": "2023-07-15T16:30:00.000000Z",
-      "description": "Product Demo (internal)",
+      "description": "Product demo (internal)",
       "title": "New Feature Showcase",
       "location": "Demo Room",
       "attendants": ["Jacob M.", "Sophia L.", "Liam J.", "Ella S."]
@@ -76,7 +166,7 @@
       "id": "4b6cddcf-6090-45a9-a7e4-1f5d791b6657",
       "startTime": "2023-07-15T15:00:00.000000Z",
       "endTime": "2023-07-15T16:30:00.000000Z",
-      "description": "Product Demo (with client)",
+      "description": "Product demo (with client)",
       "title": "New Feature Showcase",
       "location": "Demo Room",
       "attendants": ["Jacob M.", "Sophia L.", "John B.", "Allistair K."]
@@ -85,7 +175,7 @@
       "id": "a4b3e49b-987d-45f8-b7a6-2a5a34dd53ae",
       "startTime": "2023-08-05T14:00:00.000000Z",
       "endTime": "2023-08-05T15:30:00.000000Z",
-      "description": "Product Launch",
+      "description": "Product launch",
       "title": "New Product Showcase",
       "location": "Convention Center",
       "attendants": ["Sarah T.", "Mark R.", "Laura B.", "Daniel M."]
@@ -94,7 +184,7 @@
       "id": "b8d9c64c-3a67-43a5-a586-90c71de695db",
       "startTime": "2023-08-10T11:00:00.000000Z",
       "endTime": "2023-08-10T12:30:00.000000Z",
-      "description": "Client Meeting",
+      "description": "Client meeting",
       "title": "Project Planning",
       "location": "Client's Office",
       "attendants": ["Michael P.", "Sophie K.", "Oliver H."]
@@ -103,7 +193,7 @@
       "id": "c7eef5c1-d6e0-4b9d-8e13-6c8dd529d88e",
       "startTime": "2023-08-15T10:30:00.000000Z",
       "endTime": "2023-08-15T12:00:00.000000Z",
-      "description": "Training Workshop",
+      "description": "Training workshop",
       "title": "Effective Communication Skills",
       "location": "Training Room B",
       "attendants": ["Emily R.", "Andrew B.", "Natalie G.", "Joshua C."]
@@ -112,7 +202,7 @@
       "id": "d9b3c26d-7d82-4297-8a67-2eb9e7e2bbf6",
       "startTime": "2023-08-20T15:00:00.000000Z",
       "endTime": "2023-08-20T16:30:00.000000Z",
-      "description": "Product Demo",
+      "description": "Product demo",
       "title": "New Feature Presentation",
       "location": "Demo Room",
       "attendants": ["Jacob M.", "Sophia L.", "Liam J.", "Ella S."]
@@ -130,7 +220,7 @@
       "id": "fc7fd731-9fc2-44a7-a2eb-6dc52d396873",
       "startTime": "2023-06-05T14:30:00.000000Z",
       "endTime": "2023-06-05T16:00:00.000000Z",
-      "description": "Training Workshop",
+      "description": "Training workshop",
       "title": "Effective Leadership",
       "location": "Training Room A",
       "attendants": ["Michael T.", "Sophia R.", "Ethan M.", "Olivia T."]
@@ -139,7 +229,7 @@
       "id": "948c59e7-ff0b-4a86-90ad-53c4b6a9be70",
       "startTime": "2023-06-08T09:00:00.000000Z",
       "endTime": "2023-06-08T10:30:00.000000Z",
-      "description": "Product Demo",
+      "description": "Product demo",
       "title": "New Feature Showcase",
       "location": "Conference Room B",
       "attendants": ["Noah L.", "Emma G.", "James S.", "Sophia A."]
@@ -148,7 +238,7 @@
       "id": "a2a4a4ef-003f-4568-92a2-034e3e4e8992",
       "startTime": "2023-06-08T13:00:00.000000Z",
       "endTime": "2023-06-08T14:30:00.000000Z",
-      "description": "Sales Meeting",
+      "description": "Sales meeting",
       "title": "Client Presentation",
       "location": "Conference Room A",
       "attendants": ["Oliver M.", "Charlotte W.", "Daniel H.", "Emily L."]
@@ -157,7 +247,7 @@
       "id": "63ff1f78-8f7b-4df1-9d2e-926a25ef7f6d",
       "startTime": "2023-06-10T11:00:00.000000Z",
       "endTime": "2023-06-10T12:30:00.000000Z",
-      "description": "Project Discussion",
+      "description": "Project discussion",
       "title": "Feature Planning",
       "location": "Office Conference Room",
       "attendants": ["Olivia R.", "James C.", "Emily P."]
@@ -166,7 +256,7 @@
       "id": "9a12b496-6fb4-4a7c-9a37-63d7ee67ddfc",
       "startTime": "2023-06-11T16:00:00.000000Z",
       "endTime": "2023-06-11T17:30:00.000000Z",
-      "description": "Team Building Activity",
+      "description": "Team building activity",
       "title": "Outdoor Adventure",
       "location": "Adventure Park",
       "attendants": ["Liam J.", "Ava M.", "Jacob K.", "Isabella D."]
@@ -175,7 +265,7 @@
       "id": "90a1d87b-2e74-4e9e-9717-14c074b6c734",
       "startTime": "2023-06-14T09:30:00.000000Z",
       "endTime": "2023-06-14T11:00:00.000000Z",
-      "description": "Training Session",
+      "description": "Training session",
       "title": "Sales Techniques",
       "location": "Training Room B",
       "attendants": ["Lucas H.", "Mia C.", "Henry L.", "Ava P."]
@@ -193,7 +283,7 @@
       "id": "8c2d59a6-cc22-4b2c-9dab-99e92e23b2b9",
       "startTime": "2023-06-16T10:00:00.000000Z",
       "endTime": "2023-06-16T11:30:00.000000Z",
-      "description": "Project Meeting",
+      "description": "Project meeting",
       "title": "Progress Review",
       "location": "Office Conference Room",
       "attendants": ["James W.", "Emily A.", "Daniel M."]
@@ -202,7 +292,7 @@
       "id": "86ed746d-f26c-4e3f-8d8d-4054f1e3dc3e",
       "startTime": "2023-06-17T14:00:00.000000Z",
       "endTime": "2023-06-17T15:30:00.000000Z",
-      "description": "Product Training",
+      "description": "Product training",
       "title": "New Software Features",
       "location": "Training Room A",
       "attendants": ["Sophie K.", "Noah C.", "Charlotte G.", "Jacob R."]
@@ -220,7 +310,7 @@
       "id": "b1a52067-369e-4ac5-9c6a-ecf14f3e0b3b",
       "startTime": "2023-06-20T13:00:00.000000Z",
       "endTime": "2023-06-20T14:30:00.000000Z",
-      "description": "Team Building Activity",
+      "description": "Team building activity",
       "title": "Escape Room Challenge",
       "location": "Escape Room Center",
       "attendants": ["Olivia M.", "Henry C.", "Ava L.", "Liam P."]
@@ -229,7 +319,7 @@
       "id": "b3295b36-2199-4289-8ee4-5e135c3fe9c7",
       "startTime": "2023-06-22T10:00:00.000000Z",
       "endTime": "2023-06-22T11:30:00.000000Z",
-      "description": "Training Workshop",
+      "description": "Training workshop",
       "title": "Leadership Development",
       "location": "Training Room B",
       "attendants": ["Noah G.", "Sophia S.", "William R.", "Emma T."]
@@ -247,7 +337,7 @@
       "id": "5ea30319-303e-43d0-bb41-d22e6ddde859",
       "startTime": "2023-06-25T11:00:00.000000Z",
       "endTime": "2023-06-25T12:30:00.000000Z",
-      "description": "Project Discussion",
+      "description": "Project discussion",
       "title": "Feature Planning",
       "location": "Office Conference Room",
       "attendants": ["Olivia H.", "James K.", "Emily G."]
@@ -256,7 +346,7 @@
       "id": "55697926-17e5-412a-8e42-9e12976ccfe2",
       "startTime": "2023-06-26T16:00:00.000000Z",
       "endTime": "2023-06-26T17:30:00.000000Z",
-      "description": "Team Building Activity",
+      "description": "Team building activity",
       "title": "Bowling Tournament",
       "location": "Strike Zone",
       "attendants": ["Sophie J.", "Noah A.", "Charlotte L.", "Jacob P."]
@@ -265,7 +355,7 @@
       "id": "545417ad-d52e-4f14-8b45-7b95bce6b2f7",
       "startTime": "2023-06-29T09:30:00.000000Z",
       "endTime": "2023-06-29T11:00:00.000000Z",
-      "description": "Training Session",
+      "description": "Training session",
       "title": "Sales Techniques",
       "location": "Training Room A",
       "attendants": ["Lucas M.", "Mia W.", "Henry S.", "Ava R."]
@@ -301,7 +391,7 @@
       "id": "64d49eae-9e71-44a9-9e65-cc94a9f6b146",
       "startTime": "2023-07-10T09:30:00.000000Z",
       "endTime": "2023-07-10T11:00:00.000000Z",
-      "description": "Training Session",
+      "description": "Training session",
       "title": "Effective Communication",
       "location": "Training Room B",
       "attendants": ["Lucas N.", "Mia H.", "Henry C.", "Ava L."]
@@ -319,7 +409,7 @@
       "id": "0b869b87-96f7-4a9e-b45a-7df4ad9b7726",
       "startTime": "2023-07-15T10:00:00.000000Z",
       "endTime": "2023-07-15T11:30:00.000000Z",
-      "description": "Project Meeting",
+      "description": "Project meeting",
       "title": "Status Update",
       "location": "Office Conference Room",
       "attendants": ["James A.", "Emily S.", "Daniel K."]
@@ -328,7 +418,7 @@
       "id": "83f4c2ea-957a-4d87-8698-74a14beab2e7",
       "startTime": "2023-07-15T14:00:00.000000Z",
       "endTime": "2023-07-15T15:30:00.000000Z",
-      "description": "Product Training",
+      "description": "Product training",
       "title": "New Features Demo",
       "location": "Training Room A",
       "attendants": ["Sophie P.", "Noah H.", "Charlotte G.", "Jacob L."]
@@ -364,7 +454,7 @@
       "id": "5ddc4f3e-1bfc-4f53-9781-4e3f4e6f0492",
       "startTime": "2023-07-25T10:00:00.000000Z",
       "endTime": "2023-07-25T11:30:00.000000Z",
-      "description": "Project Meeting",
+      "description": "Project meeting",
       "title": "Task Allocation",
       "location": "Office Conference Room",
       "attendants": ["James C.", "Emily M.", "Daniel P."]
@@ -373,7 +463,7 @@
       "id": "4b8c8f35-9e23-4fbf-979d-02c95e3a9a6c",
       "startTime": "2023-07-25T14:00:00.000000Z",
       "endTime": "2023-07-25T15:30:00.000000Z",
-      "description": "Product Training",
+      "description": "Product training",
       "title": "Advanced Features Workshop",
       "location": "Training Room A",
       "attendants": ["Sophie H.", "Noah L.", "Charlotte D.", "Jacob M."]
@@ -418,7 +508,7 @@
       "id": "e14445e7-1054-4210-82d1-06b77c6b60d5",
       "startTime": "2023-10-15T09:30:00.000000Z",
       "endTime": "2023-10-15T11:00:00.000000Z",
-      "description": "Training Session",
+      "description": "Training session",
       "title": "Effective Communication",
       "location": "Training Room A",
       "attendants": ["Lucas G.", "Mia H.", "Henry C.", "Ava L."]
@@ -454,7 +544,7 @@
       "id": "e2fb3c1c-6e49-4b54-a2a9-759d87960172",
       "startTime": "2023-11-10T09:30:00.000000Z",
       "endTime": "2023-11-10T11:00:00.000000Z",
-      "description": "Training Session",
+      "description": "Training session",
       "title": "Effective Communication",
       "location": "Training Room A",
       "attendants": ["Lucas N.", "Mia H.", "Henry C.", "Ava L."]
@@ -472,7 +562,7 @@
       "id": "1dd034a7-3df0-43bc-9db4-ffafff12eabf",
       "startTime": "2023-11-15T10:00:00.000000Z",
       "endTime": "2023-11-15T11:30:00.000000Z",
-      "description": "Project Meeting",
+      "description": "Project meeting",
       "title": "Status Update",
       "location": "Office Conference Room",
       "attendants": ["James A.", "Emily S.", "Daniel K."]
@@ -481,7 +571,7 @@
       "id": "04b22dc4-2e7b-4a56-8c0f-bafed2678bcf",
       "startTime": "2023-11-15T14:00:00.000000Z",
       "endTime": "2023-11-15T15:30:00.000000Z",
-      "description": "Product Training",
+      "description": "Product training",
       "title": "New Features Demo",
       "location": "Training Room A",
       "attendants": ["Sophie P.", "Noah H.", "Charlotte G.", "Jacob L."]
@@ -517,7 +607,7 @@
       "id": "50c64979-d862-4e02-97b3-9d5e7500f073",
       "startTime": "2023-11-25T10:00:00.000000Z",
       "endTime": "2023-11-25T11:30:00.000000Z",
-      "description": "Project Meeting",
+      "description": "Project meeting",
       "title": "Task Allocation",
       "location": "Office Conference Room",
       "attendants": ["James C.", "Emily M.", "Daniel P."]
@@ -526,7 +616,7 @@
       "id": "fbb08f50-3b4c-4d4a-b93f-4e50f9ce9c37",
       "startTime": "2023-11-25T14:00:00.000000Z",
       "endTime": "2023-11-25T15:30:00.000000Z",
-      "description": "Product Training",
+      "description": "Product training",
       "title": "Advanced Features Workshop",
       "location": "Training Room A",
       "attendants": ["Sophie H.", "Noah L.", "Charlotte D.", "Jacob M."]
@@ -571,7 +661,7 @@
       "id": "cbe360c0-2e66-4cbe-9892-1f8fd5f0415f",
       "startTime": "2023-05-15T09:30:00.000000Z",
       "endTime": "2023-05-15T11:00:00.000000Z",
-      "description": "Training Session",
+      "description": "Training session",
       "title": "Effective Communication",
       "location": "Training Room A",
       "attendants": ["Lucas G.", "Mia H.", "Henry C.", "Ava L."]
@@ -607,7 +697,7 @@
       "id": "5730386c-21e2-45ff-8c56-9b8a44f9e5e7",
       "startTime": "2023-06-30T10:00:00.000000Z",
       "endTime": "2023-06-30T11:30:00.000000Z",
-      "description": "Project Meeting",
+      "description": "Project meeting",
       "title": "Progress Review",
       "location": "Office Conference Room",
       "attendants": ["James D.", "Emily C.", "Daniel N."]
@@ -616,7 +706,7 @@
       "id": "18c28cb7-9f43-4bdf-9b1c-6944962a2043",
       "startTime": "2023-06-30T14:00:00.000000Z",
       "endTime": "2023-06-30T15:30:00.000000Z",
-      "description": "Product Training",
+      "description": "Product training",
       "title": "New Software Features",
       "location": "Training Room B",
       "attendants": ["Sophie D.", "Noah R.", "Charlotte M.", "Jacob H."]
@@ -625,7 +715,7 @@
       "id": "e9f15751-cb53-49f0-8833-69e2a8c7b1a7",
       "startTime": "2023-08-25T09:00:00.000000Z",
       "endTime": "2023-08-25T10:30:00.000000Z",
-      "description": "Team Building Activity",
+      "description": "Team building activity",
       "title": "Outdoor Adventure Challenge",
       "location": "Adventure Park",
       "attendants": ["David H.", "Emma C.", "Benjamin W."]
@@ -634,7 +724,7 @@
       "id": "f3a536c7-6cb1-4a32-a2ae-f0a0f01942a9",
       "startTime": "2023-08-30T13:30:00.000000Z",
       "endTime": "2023-08-30T15:00:00.000000Z",
-      "description": "Quarterly Review",
+      "description": "Quarterly review",
       "title": "Business Performance Analysis",
       "location": "Boardroom",
       "attendants": ["Olivia D.", "Noah K.", "Ava M.", "William L.", "Mia P."]
@@ -643,7 +733,7 @@
       "id": "c3e0b4b7-0de7-4e63-94b3-9eaa03a22ae9",
       "startTime": "2023-09-05T10:00:00.000000Z",
       "endTime": "2023-09-05T11:30:00.000000Z",
-      "description": "Marketing Strategy Meeting",
+      "description": "Marketing strategy meeting",
       "title": "Campaign Planning",
       "location": "Conference Room A",
       "attendants": ["Sarah T.", "Mark R.", "Laura B.", "Daniel M."]
@@ -652,7 +742,7 @@
       "id": "a2e51da9-1b15-4dbd-9745-5e8df6b6b2f7",
       "startTime": "2023-09-08T09:30:00.000000Z",
       "endTime": "2023-09-08T10:30:00.000000Z",
-      "description": "Product Development Discussion",
+      "description": "Product development discussion",
       "title": "Innovation Meeting",
       "location": "Boardroom",
       "attendants": ["Michael P.", "Sophie K.", "Oliver H."]
@@ -661,7 +751,7 @@
       "id": "f6bc8934-2eae-4e6a-9a21-54b72fe201a3",
       "startTime": "2023-09-10T14:00:00.000000Z",
       "endTime": "2023-09-10T15:30:00.000000Z",
-      "description": "Training Workshop",
+      "description": "Training workshop",
       "title": "Effective Communication Skills",
       "location": "Training Room B",
       "attendants": ["Emily R.", "Andrew B.", "Natalie G.", "Joshua C."]
@@ -670,7 +760,7 @@
       "id": "d943ef7f-5bc3-42b1-94ad-2eaf5671a9a3",
       "startTime": "2023-09-15T11:00:00.000000Z",
       "endTime": "2023-09-15T12:30:00.000000Z",
-      "description": "Client Meeting",
+      "description": "Client meeting",
       "title": "Project Discussion",
       "location": "Client's Office",
       "attendants": ["Jacob M.", "Sophia L.", "Liam J.", "Ella S."]
@@ -679,7 +769,7 @@
       "id": "e7b52c10-3777-4e48-8688-8e6ed45e7123",
       "startTime": "2023-09-18T09:00:00.000000Z",
       "endTime": "2023-09-18T10:30:00.000000Z",
-      "description": "Team Building Activity",
+      "description": "Team building activity",
       "title": "Outdoor Adventure Challenge",
       "location": "Adventure Park",
       "attendants": ["David H.", "Emma C.", "Benjamin W."]
@@ -688,7 +778,7 @@
       "id": "c15d6b7e-8435-4956-9907-f81e0f33dc74",
       "startTime": "2023-09-20T14:30:00.000000Z",
       "endTime": "2023-09-20T16:00:00.000000Z",
-      "description": "Product Training",
+      "description": "Product training",
       "title": "New Feature Demo",
       "location": "Training Room A",
       "attendants": ["Sophie M.", "Henry D.", "Ava S.", "Liam G."]
@@ -697,7 +787,7 @@
       "id": "9a7899d1-1199-47a4-8d2d-734ea00c4554",
       "startTime": "2023-09-22T13:00:00.000000Z",
       "endTime": "2023-09-22T14:30:00.000000Z",
-      "description": "Board Meeting",
+      "description": "Board meeting",
       "title": "Quarterly Review",
       "location": "Boardroom",
       "attendants": ["William C.", "Olivia P.", "Daniel B.", "Emily K."]
@@ -706,7 +796,7 @@
       "id": "b1d95381-8af2-48a5-bd1b-1e9a2c45427f",
       "startTime": "2023-09-23T09:00:00.000000Z",
       "endTime": "2023-09-23T10:30:00.000000Z",
-      "description": "Product Launch Event",
+      "description": "Product launch event",
       "title": "New Product Showcase",
       "location": "Grand Ballroom",
       "attendants": [
@@ -721,7 +811,7 @@
       "id": "a8f871f7-47a3-474b-b080-3d3f54b12b44",
       "startTime": "2023-09-25T16:00:00.000000Z",
       "endTime": "2023-09-25T17:30:00.000000Z",
-      "description": "Project Status Update",
+      "description": "Project status update",
       "title": "Weekly Team Meeting",
       "location": "Conference Room B",
       "attendants": ["Noah L.", "Emma G.", "James S.", "Sophia A."]
@@ -730,7 +820,7 @@
       "id": "bdfe1f7b-2f48-46e5-8245-47f5bdcfe52f",
       "startTime": "2023-09-25T14:30:00.000000Z",
       "endTime": "2023-09-25T16:00:00.000000Z",
-      "description": "Training Workshop",
+      "description": "Training workshop",
       "title": "Effective Communication Skills",
       "location": "Training Room C",
       "attendants": ["Oliver M.", "Charlotte W.", "Daniel H.", "Emily L."]
@@ -739,7 +829,7 @@
       "id": "1f5f6797-ba7a-4db1-a495-84cbbbc0799f",
       "startTime": "2023-09-28T13:00:00.000000Z",
       "endTime": "2023-09-28T14:30:00.000000Z",
-      "description": "Sales Presentation",
+      "description": "Sales presentation",
       "title": "Client Pitch",
       "location": "Conference Room A",
       "attendants": ["Olivia R.", "James C.", "Emily P."]
@@ -748,7 +838,7 @@
       "id": "fa6748be-2a50-4dd2-9482-4e2bfe4eae88",
       "startTime": "2023-09-30T09:00:00.000000Z",
       "endTime": "2023-09-30T10:30:00.000000Z",
-      "description": "Team Building Activity",
+      "description": "Team building activity",
       "title": "Escape Room Challenge",
       "location": "Escape Room Center",
       "attendants": ["William S.", "Ella G.", "David T."]
@@ -757,7 +847,7 @@
       "id": "57f38089-2e0e-4f18-82f2-07389d6e2f10",
       "startTime": "2023-09-30T13:30:00.000000Z",
       "endTime": "2023-09-30T15:00:00.000000Z",
-      "description": "Product Training",
+      "description": "Product training",
       "title": "Software Demo",
       "location": "Training Room B",
       "attendants": ["Benjamin M.", "Sophia H.", "Jacob L.", "Emma D."]
@@ -775,7 +865,7 @@
       "id": "d9d8ed9b-5a11-45f0-a6d6-019d2c3d84f9",
       "startTime": "2023-08-05T10:00:00.000000Z",
       "endTime": "2023-08-05T11:30:00.000000Z",
-      "description": "Marketing Strategy Meeting",
+      "description": "Marketing strategy meeting",
       "title": "Campaign Planning",
       "location": "Conference Room A",
       "attendants": ["Sarah T.", "Mark R.", "Laura B.", "Daniel M."]
@@ -784,7 +874,7 @@
       "id": "c0410f4e-7c49-4c68-8444-dde4e2bc9b5c",
       "startTime": "2023-08-10T09:30:00.000000Z",
       "endTime": "2023-08-10T10:30:00.000000Z",
-      "description": "Product Development Discussion",
+      "description": "Product development discussion",
       "title": "Innovation Meeting",
       "location": "Boardroom",
       "attendants": ["Michael P.", "Sophie K.", "Oliver H."]
@@ -793,7 +883,7 @@
       "id": "c0410f4e-7c49-4c68-8444-dde4e2gdgb5c",
       "startTime": "2023-08-07T09:30:00.000000Z",
       "endTime": "2023-08-07T10:30:00.000000Z",
-      "description": "Dev Planning Session",
+      "description": "Dev planning session",
       "title": "Dev Team Meeting",
       "location": "Boardroom",
       "attendants": ["Michael P.", "Kez A.", "Paul C."]
@@ -802,7 +892,7 @@
       "id": "b10e8bb4-3947-49f9-ba0d-98de8551ed6e",
       "startTime": "2023-08-15T14:00:00.000000Z",
       "endTime": "2023-08-15T15:30:00.000000Z",
-      "description": "Training Workshop",
+      "description": "Training workshop",
       "title": "Effective Communication Skills",
       "location": "Training Room B",
       "attendants": ["Emily R.", "Andrew B.", "Natalie G.", "Joshua C."]
@@ -811,7 +901,7 @@
       "id": "f4e43e1d-2c3f-4c5e-b331-26197a19c827",
       "startTime": "2023-08-20T11:00:00.000000Z",
       "endTime": "2023-08-20T12:30:00.000000Z",
-      "description": "Client Meeting",
+      "description": "Client meeting",
       "title": "Project Discussion",
       "location": "Client's Office",
       "attendants": ["Jacob M.", "Sophia L.", "Liam J.", "Ella S."]
@@ -820,7 +910,7 @@
       "id": "e5362c95-961e-48b2-9067-6a0019cc08ff",
       "startTime": "2023-08-25T09:00:00.000000Z",
       "endTime": "2023-08-25T10:30:00.000000Z",
-      "description": "Team Building Activity",
+      "description": "Team building activity",
       "title": "Outdoor Adventure Challenge",
       "location": "Adventure Park",
       "attendants": ["David H.", "Emma C.", "Benjamin W."]
@@ -829,7 +919,7 @@
       "id": "d0644e6b-19af-4397-8e15-141d3b3f6380",
       "startTime": "2023-08-25T14:30:00.000000Z",
       "endTime": "2023-08-25T16:00:00.000000Z",
-      "description": "Product Training",
+      "description": "Product training",
       "title": "New Feature Demo",
       "location": "Training Room A",
       "attendants": ["Sophie M.", "Henry D.", "Ava S.", "Liam G."]
@@ -838,7 +928,7 @@
       "id": "5a273749-5f7a-4b25-9787-0a8d65a51a7d",
       "startTime": "2023-07-22T09:00:00.000000Z",
       "endTime": "2023-07-22T10:30:00.000000Z",
-      "description": "Team Building Activity",
+      "description": "Team building activity",
       "title": "Escape Room Challenge",
       "location": "Escape Room X",
       "attendants": ["David H.", "Emma C.", "Benjamin W."]
@@ -847,7 +937,7 @@
       "id": "6e70e43d-2b54-4e7d-8c88-998f1f20e986",
       "startTime": "2023-07-30T13:30:00.000000Z",
       "endTime": "2023-07-30T15:00:00.000000Z",
-      "description": "Quarterly Review",
+      "description": "Quarterly review",
       "title": "Performance Evaluation",
       "location": "Boardroom",
       "attendants": ["Olivia D.", "Noah K.", "Ava M.", "William L.", "Mia P."]
@@ -865,7 +955,7 @@
       "id": "6e29ebfe-cf08-4d92-9e36-0e20c2c07a16",
       "startTime": "2023-04-05T18:00:00.000000Z",
       "endTime": "2023-04-05T20:30:00.000000Z",
-      "description": "Networking Event",
+      "description": "Networking event",
       "title": "Business Mixer",
       "location": "City Hotel, Conference Room A",
       "attendants": [
@@ -880,7 +970,7 @@
       "id": "a48e9479-747e-4374-86b0-32e20d486cfd",
       "startTime": "2023-05-12T10:00:00.000000Z",
       "endTime": "2023-05-12T12:00:00.000000Z",
-      "description": "Training Session",
+      "description": "Training session",
       "title": "Product Demonstration",
       "location": "Training Room B",
       "attendants": ["Sophie R.", "William M.", "Isabella C.", "James B."]

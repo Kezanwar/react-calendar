@@ -31,12 +31,12 @@ const ThemeToggle: React.FC = (props) => {
       {mode === 'light' ? (
         <>
           <MdOutlineDarkMode style={darkIconStyles} />
-          <span className="hidden lg:inline">Dark mode</span>
+          {/* <span className="hidden lg:inline">Dark mode</span> */}
         </>
       ) : (
         <>
           <MdOutlineWbSunny style={lightIconStyles} />
-          <span className="hidden lg:inline">Light mode</span>
+          {/* <span className="hidden lg:inline">Light mode</span> */}
         </>
       )}
     </button>

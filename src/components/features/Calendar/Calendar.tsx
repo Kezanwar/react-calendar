@@ -1,25 +1,53 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useMemo, useRef } from 'react';
 
 // calendar utils
-import { addMonths, startOfMonth, subMonths } from 'date-fns';
+import { addMonths, subMonths } from 'date-fns';
 import { getCalendarMonth } from '@app/util/calendar/calendar.util';
 
 // redux
-import { AppDispatch, RootState } from '@app/types/store';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchEventsAction } from '@app/store/slices/events/events.actions';
+import { AppDispatch } from '@app/types/store';
+import { useDispatch } from 'react-redux';
 
 // components
 import {
   CalendarGrid,
   CalendarControls,
-  DayEvents,
+  Schedule,
   CalendarDays
 } from './components';
+import { ErrorLottie } from '@app/components/elements/ErrorLottie';
+import { LoadingSpinner } from '@app/components/elements/LoadingSpinner';
+import useCalendarState from '@app/hooks/redux/useCalendarState';
+
+import { useGetAllEventsQuery } from '@app/store/services/events.services';
+import {
+  handleSetChosenMonth,
+  handleSetSelectedDay
+} from '@app/store/slices/calendar/calendar.actions';
+
+const Error: React.FC = () => {
+  return (
+    <div className="flex items-center py-4 gap-2">
+      <ErrorLottie />
+      <p className=" text-red-500 dark:text-red-400 text-[14px]">
+        An error occured fetching your events, check your internet connection or
+        refresh...
+      </p>
+    </div>
+  );
+};
+
+const Loading: React.FC = () => {
+  return (
+    <div className="flex items-center py-4 gap-2">
+      <LoadingSpinner />
+      <p className="__black-and-white text-[14px]">Loading your calendar</p>
+    </div>
+  );
+};
 
 const Calendar: React.FC = () => {
-  const [chosenMonth, setChosenMonth] = useState(new Date());
-  const [selectedDay, setSelectedDay] = useState(new Date());
+  const { chosenMonth, selectedDay } = useCalendarState();
 
   const calMonth = useMemo(() => {
     const { calendarMonth, year, month } = getCalendarMonth(chosenMonth);
@@ -30,28 +58,19 @@ const Calendar: React.FC = () => {
   const { calendarMonth, year, month } = calMonth;
 
   const dispatch: AppDispatch = useDispatch();
-  const { loading, error, isFetched, stale } = useSelector(
-    (state: RootState) => state.events
-  );
 
-  useEffect(() => {
-    if (!loading && (!isFetched || stale)) {
-      fetchEventsAction(dispatch);
-    }
-  }, []);
+  const { isLoading, isError } = useGetAllEventsQuery();
 
   const prev = useRef(new Date());
 
   const handleNextMonth = () => {
     const nextMonth = addMonths(chosenMonth, 1);
-    setChosenMonth(nextMonth);
-    // setSelectedDay(startOfMonth(nextMonth));
+    dispatch(handleSetChosenMonth(nextMonth));
   };
 
   const handlePrevMonth = () => {
     const prevMonth = subMonths(chosenMonth, 1);
-    setChosenMonth(prevMonth);
-    // setSelectedDay(startOfMonth(prevMonth));
+    dispatch(handleSetChosenMonth(prevMonth));
   };
 
   const handleUpdatePrevRef = () => {
@@ -59,7 +78,7 @@ const Calendar: React.FC = () => {
   };
 
   const handleSelectDay = (date: Date) => {
-    setSelectedDay(date);
+    dispatch(handleSetSelectedDay(date));
   };
 
   return (
@@ -82,11 +101,12 @@ const Calendar: React.FC = () => {
             selectedDay={selectedDay}
             handleSelectDay={handleSelectDay}
           />
-          {error ? <p>error</p> : ''}
+          {isError && <Error />}
+          {isLoading && <Loading />}
         </div>
         <div className="right-container p-2  w-full h-full mt-12 md:mt-0  md:p-6 md:pt-12">
           <div className="w-full max-w-[100%] mx-auto lg:max-w-[500px]">
-            <DayEvents selectedDay={selectedDay} />
+            <Schedule selectedDay={selectedDay} />
           </div>
         </div>
       </div>

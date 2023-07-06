@@ -10,7 +10,7 @@ type Props = {
 const ThemeRoot: React.FC<Props> = ({ children }) => {
   const mode = useSelector((state: RootState) => state.theme.mode);
   return (
-    <div className={`${mode || 'dark'} `}>
+    <div className={`${mode || 'dark'} max-w-[100vw] overflow-x-hidden`}>
       <div
         className={`min-h-[100vh] ${
           mode !== 'dark'

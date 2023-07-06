@@ -1,11 +1,11 @@
 import React, { useMemo } from 'react';
-import { useSelector } from 'react-redux';
+
 import { motion } from 'framer-motion';
 import { isBefore, isSameDay, isSameMonth, isToday } from 'date-fns';
 
 import { cc } from '@app/util/styles/styles.util';
 
-import { RootState } from '@app/types/store';
+import { useGetAllEventsQuery } from '@app/store/services/events.services';
 
 type Props = {
   chosenMonth: Date;
@@ -36,7 +36,7 @@ const CalendarGrid: React.FC<Props> = React.memo(
   }) => {
     const isPrevious = isBefore(chosenMonth, prev);
 
-    const { events } = useSelector((state: RootState) => state.events);
+    const { data: events } = useGetAllEventsQuery();
 
     const thisMonthEvents = useMemo(() => {
       return events?.filter((ev) =>

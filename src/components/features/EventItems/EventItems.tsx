@@ -1,54 +1,24 @@
-import React, { useMemo } from 'react';
-import { format, isSameDay } from 'date-fns';
+import React from 'react';
 import { motion } from 'framer-motion';
-
-import { useSelector } from 'react-redux';
-import { RootState } from '@app/types/store';
-
-import { AddEventBtn } from '@app/components/buttons/AddEventBtn';
-
 import { IEvent } from '@app/types/events';
 import { cc, getColorByName } from '@app/util/styles/styles.util';
-
-type Props = {
-  selectedDay: Date;
-};
-
-const Title: React.FC<Props> = ({ selectedDay }) => {
-  return (
-    <motion.h3
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="text-[1.6rem] md:text-3xl lg:text-4xl border-b-2 border-b-gray-200 dark:border-b-gray-800 pb-3 mb-12"
-    >
-      {format(selectedDay, 'EEEE do MMM yyyy')}
-    </motion.h3>
-  );
-};
-
-const NoEventsMessage: React.FC = () => {
-  return (
-    <motion.div
-      className="min-h-[30vh]"
-      initial={{ opacity: 0, y: -10 }}
-      animate={{ opacity: 1, y: 0 }}
-    >
-      <p className="text-gray-400 dark:text-gray-600">
-        You haven't got any events for this day yet...
-      </p>
-      <AddEventBtn className="mt-6" />
-    </motion.div>
-  );
-};
+import { format } from 'date-fns';
+import { AddEventBtn } from '@app/components/buttons/AddEventBtn';
 
 type EventItemsProps = {
   events: IEvent[];
+  withDate: boolean;
+  withAddEvent: boolean;
 };
 
-const EventItems: React.FC<EventItemsProps> = ({ events }) => {
+const EventItems: React.FC<EventItemsProps> = ({
+  events,
+  withDate,
+  withAddEvent
+}) => {
   return (
-    <div className="">
-      {events.map((ev, i) => {
+    <div className="__black-and-white">
+      {events?.map((ev, i) => {
         return (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -64,6 +34,11 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
           >
             <div className="flex justify-between gap-3">
               <div className="max-w-[80%]">
+                {withDate && (
+                  <p className="text-[14px] text-gray-500 mb-3">
+                    {format(new Date(ev.startTime), 'EEE do MMM yyyy')}
+                  </p>
+                )}
                 <h2 className="text-xl md:text-2xl mb-1">{ev.title}</h2>
                 <p className="text-sm  text-gray-500 mb-4">
                   {ev.description + ' @ ' + ev.location}
@@ -94,13 +69,13 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
                 </div>
               </div>
               <div>
-                <div className="flex items-center whitespace-nowrap justify-between gap-2">
+                <div className="flex items-center whitespace-nowrap justify-end gap-2">
                   <div className="bg-green-400 dark:bg-green-300 h-2 w-2 rounded-lg" />
                   <p className="text-[12px] text-right flex-1 ">
                     {format(new Date(ev.startTime), 'kk:mm aaa')}
                   </p>
                 </div>
-                <div className="flex items-center whitespace-nowrap justify-between gap-2">
+                <div className="flex items-center whitespace-nowrap justify-end gap-2">
                   <div className="bg-red-400 dark:bg-red-400 h-2 w-2 rounded-lg" />
                   <p className="text-[12px] text-right  flex-1">
                     {format(new Date(ev.endTime), 'kk:mm aaa')}
@@ -111,33 +86,13 @@ const EventItems: React.FC<EventItemsProps> = ({ events }) => {
           </motion.div>
         );
       })}
-      <div className="flex justify-end mt-12">
-        <AddEventBtn />
-      </div>
-    </div>
-  );
-};
-
-const DayEvents: React.FC<Props> = ({ selectedDay }) => {
-  const { events } = useSelector((state: RootState) => state.events);
-
-  const thisDayEvents = useMemo(() => {
-    return events
-      ? events.filter((ev) => isSameDay(new Date(ev.startTime), selectedDay))
-      : [];
-  }, [selectedDay, events]);
-
-  return (
-    <div className="__black-and-white pb-16">
-      <Title selectedDay={selectedDay} />
-
-      {!thisDayEvents?.length ? (
-        <NoEventsMessage />
-      ) : (
-        <EventItems events={thisDayEvents} />
+      {withAddEvent && (
+        <div className="flex justify-end mt-12">
+          <AddEventBtn />
+        </div>
       )}
     </div>
   );
 };
 
-export default DayEvents;
+export default EventItems;
