@@ -13,14 +13,14 @@ const SearchButton: React.FC = () => {
   const location = useLocation();
   const isSearch = location.pathname === PATH_SEARCH;
   return (
-    <Link
-      to={PATH_SEARCH}
-      className={`__black-and-white active:scale-75 p-2 ${
-        isSearch ? 'text-rose-600 dark:text-teal-500' : ''
-      }  transition-all`}
-    >
-      <FiSearch style={iconStyles} />
-    </Link>
+    <div className="relative __black-and-white  p-2 active:scale-75 transition-all">
+      <Link to={PATH_SEARCH}>
+        <FiSearch style={iconStyles} />
+      </Link>
+      {isSearch && (
+        <div className="absolute bottom-[-0.25rem] w-1 h-1 bg-green-500   rounded-full left-[50%] translate-x-[-50%]" />
+      )}
+    </div>
   );
 };
 
