@@ -5,7 +5,11 @@ import { Calendar } from '@app/components/features/Calendar';
 
 const Home: React.FC = () => {
   return (
-    <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Calendar />
     </motion.main>
   );

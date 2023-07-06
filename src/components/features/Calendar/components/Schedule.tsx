@@ -1,6 +1,7 @@
 import React, { Suspense, useMemo } from 'react';
 import { format, isBefore, isSameDay } from 'date-fns';
 import { motion } from 'framer-motion';
+import { TbChecklist } from 'react-icons/tb';
 
 import { useSelector } from 'react-redux';
 import { RootState } from '@app/types/store';
@@ -10,15 +11,20 @@ import { AddEventBtn } from '@app/components/buttons/AddEventBtn';
 import { LoadingSpinner } from '@app/components/elements/LoadingSpinner';
 
 import { cc, getColorByName } from '@app/util/styles/styles.util';
+import useEventsState from '../../../../hooks/redux/useEventsState';
 
 type Props = {
   selectedDay: Date;
 };
 
+const iStyle = { fontSize: '18px', marginLeft: '-3px' };
+
 const Title: React.FC<Props> = ({ selectedDay }) => {
   return (
     <div>
-      <p className="text-gray-500 text-[14px] mb-1">Schedule for</p>
+      <p className="text-gray-500 text-[14px] mb-1 flex items-center gap-1">
+        <TbChecklist style={iStyle} /> Schedule for
+      </p>
       <motion.h3
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -132,7 +138,7 @@ const LoadingSchedule: React.FC = () => {
 };
 
 const Schedule: React.FC<Props> = ({ selectedDay }) => {
-  const { events } = useSelector((state: RootState) => state.events);
+  const { events } = useEventsState();
 
   const thisDayEvents = useMemo(() => {
     return events

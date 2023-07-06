@@ -22,6 +22,8 @@ import {
 } from './components';
 import { ErrorLottie } from '@app/components/elements/ErrorLottie';
 import { LoadingSpinner } from '../../elements/LoadingSpinner';
+import useCalendarState from '../../../hooks/redux/useCalendarState';
+import useEventsState from '../../../hooks/redux/useEventsState';
 
 const Error: React.FC = () => {
   return (
@@ -45,12 +47,7 @@ const Loading: React.FC = () => {
 };
 
 const Calendar: React.FC = () => {
-  const chosenMonth = useSelector(
-    (state: RootState) => state.calendar.chosenMonth
-  );
-  const selectedDay = useSelector(
-    (state: RootState) => state.calendar.selectedDay
-  );
+  const { chosenMonth, selectedDay } = useCalendarState();
 
   const calMonth = useMemo(() => {
     const { calendarMonth, year, month } = getCalendarMonth(chosenMonth);
@@ -61,9 +58,7 @@ const Calendar: React.FC = () => {
   const { calendarMonth, year, month } = calMonth;
 
   const dispatch: AppDispatch = useDispatch();
-  const { loading, error, isFetched, stale } = useSelector(
-    (state: RootState) => state.events
-  );
+  const { loading, error, isFetched, stale } = useEventsState();
 
   useEffect(() => {
     if (!loading && (!isFetched || stale)) {

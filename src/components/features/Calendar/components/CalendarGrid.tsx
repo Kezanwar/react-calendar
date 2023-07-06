@@ -6,6 +6,7 @@ import { isBefore, isSameDay, isSameMonth, isToday } from 'date-fns';
 import { cc } from '@app/util/styles/styles.util';
 
 import { RootState } from '@app/types/store';
+import useEventsState from '../../../../hooks/redux/useEventsState';
 
 type Props = {
   chosenMonth: Date;
@@ -36,7 +37,7 @@ const CalendarGrid: React.FC<Props> = React.memo(
   }) => {
     const isPrevious = isBefore(chosenMonth, prev);
 
-    const { events } = useSelector((state: RootState) => state.events);
+    const { events } = useEventsState();
 
     const thisMonthEvents = useMemo(() => {
       return events?.filter((ev) =>

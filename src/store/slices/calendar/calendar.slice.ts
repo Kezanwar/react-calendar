@@ -3,13 +3,13 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 // types
 
 interface calendarSliceState {
-  chosenMonth: Date;
-  selectedDay: Date;
+  chosenMonth: string;
+  selectedDay: string;
 }
 
 const initialState: calendarSliceState = {
-  chosenMonth: new Date(),
-  selectedDay: new Date()
+  chosenMonth: new Date().toISOString(),
+  selectedDay: new Date().toISOString()
 };
 
 const calendarSlice = createSlice({
@@ -17,10 +17,10 @@ const calendarSlice = createSlice({
   initialState,
   reducers: {
     setChosenMonth: (state, { payload }: PayloadAction<Date>) => {
-      state.chosenMonth = payload;
+      state.chosenMonth = payload.toISOString();
     },
     setSelectedDay: (state, { payload }: PayloadAction<Date>) => {
-      state.selectedDay = payload;
+      state.selectedDay = payload.toISOString();
     }
   }
 });
