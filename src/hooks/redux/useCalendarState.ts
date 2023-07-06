@@ -1,13 +1,23 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '@app/types/store';
+import { useMemo } from 'react';
 
 const useCalendarState = () => {
-  const state = useSelector((state: RootState) => ({
-    chosenMonth: new Date(state.calendar.chosenMonth),
-    selectedDay: new Date(state.calendar.selectedDay)
-  }));
+  const chosenMonth = useSelector(
+    (state: RootState) => state.calendar.chosenMonth
+  );
+  const selectedDay = useSelector(
+    (state: RootState) => state.calendar.selectedDay
+  );
 
-  return state;
+  const memoizedState = useMemo(() => {
+    return {
+      chosenMonth: new Date(chosenMonth),
+      selectedDay: new Date(selectedDay)
+    };
+  }, [chosenMonth, selectedDay]);
+
+  return memoizedState;
 };
 
 export default useCalendarState;

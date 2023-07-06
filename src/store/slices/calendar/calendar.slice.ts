@@ -16,11 +16,11 @@ const calendarSlice = createSlice({
   name: 'calendarSlice',
   initialState,
   reducers: {
-    setChosenMonth: (state, { payload }: PayloadAction<Date>) => {
-      state.chosenMonth = payload.toISOString();
+    setChosenMonth: (state, { payload }: PayloadAction<string>) => {
+      state.chosenMonth = payload;
     },
-    setSelectedDay: (state, { payload }: PayloadAction<Date>) => {
-      state.selectedDay = payload.toISOString();
+    setSelectedDay: (state, { payload }: PayloadAction<string>) => {
+      state.selectedDay = payload;
     }
   }
 });

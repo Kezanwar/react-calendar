@@ -3,11 +3,10 @@ import { format, isBefore, isSameDay } from 'date-fns';
 import { TbChecklist } from 'react-icons/tb';
 import { motion } from 'framer-motion';
 
-import useEventsState from '@app/hooks/redux/useEventsState';
-
 import { AddEventBtn } from '@app/components/buttons/AddEventBtn';
 import { LoadingSpinner } from '@app/components/elements/LoadingSpinner';
 import { EventItems } from '@app/components/features/EventItems';
+import { useGetAllEventsQuery } from '../../../../store/services/events.services';
 
 type Props = {
   selectedDay: Date;
@@ -57,7 +56,7 @@ const LoadingSchedule: React.FC = () => {
 };
 
 const Schedule: React.FC<Props> = ({ selectedDay }) => {
-  const { events } = useEventsState();
+  const { data: events } = useGetAllEventsQuery();
 
   const thisDayEvents = useMemo(() => {
     return events
@@ -76,7 +75,11 @@ const Schedule: React.FC<Props> = ({ selectedDay }) => {
         {!thisDayEvents?.length ? (
           <NoEventsMessage />
         ) : (
-          <EventItems events={thisDayEvents} />
+          <EventItems
+            withAddEvent={false}
+            withDate={false}
+            events={thisDayEvents}
+          />
         )}
       </Suspense>
     </div>

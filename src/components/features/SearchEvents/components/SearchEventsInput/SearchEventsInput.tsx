@@ -13,15 +13,16 @@ interface InputProps {
 const SearchEventsInput: React.FC<InputProps> = ({ loading, ...rest }) => {
   return (
     <div className="w-full max-w-[500px]">
-      <p className="text-gray-500 text-[14px] mb-3 flex items-center gap-1">
+      <p className="text-gray-500 text-[14px] mb-6 justify-center flex items-center gap-1">
         <LuCalendarSearch /> Search your calendar by event name, description or
         attendees
       </p>
-      <div className="shadow-md  rounded-md dark:bg-gray-900 flex">
+
+      <div className="shadow-md   rounded-md dark:bg-gray-900 flex">
         <input
           placeholder="Start typing..."
           {...rest}
-          className="w-full py-3 px-3 bg-transparent dark:text-white outline-none dark:placeholder:text-white placeholder:transition-all transition-all focus:placeholder:opacity-0"
+          className="w-full py-3 px-3 bg-transparent dark:text-white outline-none dark:placeholder:text-gray-400 placeholder:transition-all transition-all focus:placeholder:opacity-0"
         />
         <div className="w-[50px] flex items-center justify-center">
           {loading && <LoadingSpinner />}

@@ -18,7 +18,7 @@ const EventItems: React.FC<EventItemsProps> = ({
 }) => {
   return (
     <div className="__black-and-white">
-      {events.map((ev, i) => {
+      {events?.map((ev, i) => {
         return (
           <motion.div
             initial={{ opacity: 0, y: -10 }}

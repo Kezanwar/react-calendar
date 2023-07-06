@@ -1,5 +1,5 @@
 // components
-import { ThemeRoot } from '@app/components/features/ThemeRoot';
+import { ThemeRoot } from '@app/components/layout/ThemeRoot';
 import { Header } from '@app/components/features/Header';
 
 // routes
