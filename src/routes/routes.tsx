@@ -2,20 +2,12 @@ import React from 'react';
 import { useLocation, useRoutes } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
-// guards
-
-// layouts
-
 // pages
 import Home from '../pages/Home/Home';
-import {
-  PATH_ADD_EVENT,
-  PATH_HOME,
-  PATH_SEARCH
-} from '../constants/paths.constants';
 import Search from '../pages/Search/Search';
 
 // config
+import { PATH_HOME, PATH_SEARCH } from '../constants/paths.constants';
 
 // ----------------------------------------------------------------------
 
@@ -23,10 +15,6 @@ const Router: React.FC = () => {
   const elements = useRoutes([
     {
       path: PATH_HOME,
-      element: <Home />
-    },
-    {
-      path: PATH_ADD_EVENT,
       element: <Home />
     },
     {
